@@ -4,9 +4,9 @@
   "description": "A Probot app",
   "author": "Tom Bowden <tom.bowden@nested.com>",
   "license": "ISC",
-  "repository": "https://github.com//chonkbot.git",
-  "homepage": "https://github.com//chonkbot",
-  "bugs": "https://github.com//chonkbot/issues",
+  "repository": "https://github.com/tpbowden/chonkbot.git",
+  "homepage": "https://github.com/tpbowden/chonkbot",
+  "bugs": "https://github.com/tpbowden/chonkbot/issues",
   "keywords": [
     "probot",
     "github",
