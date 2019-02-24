@@ -14,7 +14,3 @@ yarn build
 # Run the bot
 yarn start
 ```
-
-## License
-
-[ISC](LICENSE) © 2019 Tom Bowden <tom.bowden@nested.com>
