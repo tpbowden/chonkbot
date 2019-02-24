@@ -15,7 +15,7 @@ export = (app: Application) => {
       sha: context.payload.pull_request.head.sha,
       state: "success",
       description: calculateChonk({ additions, deletions, files }),
-      context: "Chonkbot"
+      context: "chonkbot"
     });
   });
 };
