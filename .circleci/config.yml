@@ -40,10 +40,6 @@ jobs:
             - v1-dependencies-{{ checksum "yarn.lock" }}
             - v1-dependencies-
       - run: yarn build
-      - save_cache:
-          paths:
-            - lib
-          key: v1-build
 
   deploy:
     docker:
@@ -55,9 +51,7 @@ jobs:
           keys:
             - v1-dependencies-{{ checksum "yarn.lock" }}
             - v1-dependencies-
-      - restore_cache:
-          keys:
-            - v1-build
+      - run: yarn build
       - run: yarn deploy
 
 workflows:
