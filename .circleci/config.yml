@@ -42,7 +42,7 @@ jobs:
       - run: yarn build
       - save_cache:
           paths:
-            - node_modules
+            - lib
           key: v1-build
 
   deploy:
