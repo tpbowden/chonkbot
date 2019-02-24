@@ -18,6 +18,11 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
+"@chadfawcett/probot-serverless-now@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@chadfawcett/probot-serverless-now/-/probot-serverless-now-0.0.1.tgz#5f507dd8e8c2632f3ede542bec24916610969d11"
+  integrity sha512-rY7QNKyF7kxsC5eETlrz6o7trFXuXIPRmnhKJuwYBvruP2OsAzvJq9/Ye+mbTjw+zF3PMSeuFd+9cTRq5j/EVQ==
+
 "@octokit/rest@^15.18.0":
   version "15.18.1"
   resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-15.18.1.tgz#ec7fb0f8775ef64dc095fae6635411d3fbff9b62"
