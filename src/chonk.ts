@@ -5,7 +5,7 @@ type ChonkInput = {
 };
 
 export const calculateChonk = ({ additions, deletions, files }: ChonkInput) => {
-  const score = (additions + deletions) * Math.ceil(files / 10);
+  const score = (additions + deletions) * (files / 10);
   if (score >= 5000) {
     return "OH LAWD HE COMIN!";
   }
