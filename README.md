@@ -27,8 +27,8 @@ where:
 
 This is visually represented by the 'chonk landscape' below:
 
-![chonk landscape](https://github.com/tpbowden/chonkbot/chonk-landscape.png)
+![chonk landscape](chonk-landscape.png)
 
 ## What is a chonk?
 
-![chonk chart](https://github.com/tpbowden/chonkbot/chonk-chart.png)
+![chonk chart](chonk-chart.png)
