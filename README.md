@@ -31,4 +31,4 @@ This is visually represented by the 'chonk landscape' below:
 
 ## What is a chonk?
 
-![chonk chart](chonk-chart.png)
+![chonk chart](chonk-chart.jpg)
