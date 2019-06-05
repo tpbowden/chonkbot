@@ -21,7 +21,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@chadfawcett/probot-serverless-now": "^0.0.1",
+    "@chadfawcett/probot-serverless-now": "^1.0.0",
     "probot": "^7.5.3"
   },
   "devDependencies": {
