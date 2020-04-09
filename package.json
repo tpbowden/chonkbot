@@ -28,7 +28,7 @@
     "@types/jest": "^24.0.24",
     "@types/node": "^12.7.0",
     "jest": "^24.8.0",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.3",
     "now": "^16.7.0",
     "smee-client": "^1.1.0",
     "ts-jest": "^24.0.2",
