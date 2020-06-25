@@ -1,12 +1,11 @@
-import { Application } from "probot";
-import { calculateChonk } from "./chonk";
+const { calculateChonk } = require("./chonk");
 
-export = (app: Application) => {
-  app.on("pull_request", async context => {
+module.exports = (app) => {
+  app.on("pull_request", async (context) => {
     const {
       additions,
       deletions,
-      changed_files: files
+      changed_files: files,
     } = context.payload.pull_request;
 
     await context.github.repos.createStatus({
@@ -15,7 +14,7 @@ export = (app: Application) => {
       sha: context.payload.pull_request.head.sha,
       state: "success",
       description: calculateChonk({ additions, deletions, files }),
-      context: "chonkbot"
+      context: "chonkbot",
     });
   });
 };

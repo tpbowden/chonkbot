@@ -1,4 +1,4 @@
-import { calculateChonk } from "../src/chonk";
+const { calculateChonk } = require("../src/chonk");
 
 describe("calculateChonk", () => {
   it("is a fine boi for small changes", () => {
@@ -6,7 +6,7 @@ describe("calculateChonk", () => {
       calculateChonk({
         files: 5,
         additions: 100,
-        deletions: 50
+        deletions: 50,
       })
     ).toEqual("A fine boi");
   });
@@ -16,7 +16,7 @@ describe("calculateChonk", () => {
       calculateChonk({
         files: 10,
         additions: 150,
-        deletions: 100
+        deletions: 100,
       })
     ).toEqual("He chomnk");
   });
@@ -26,7 +26,7 @@ describe("calculateChonk", () => {
       calculateChonk({
         files: 13,
         additions: 200,
-        deletions: 200
+        deletions: 200,
       })
     ).toEqual("A heckin' chonker");
   });
@@ -36,7 +36,7 @@ describe("calculateChonk", () => {
       calculateChonk({
         files: 18,
         additions: 500,
-        deletions: 300
+        deletions: 300,
       })
     ).toEqual("Hefty chonk");
   });
@@ -46,7 +46,7 @@ describe("calculateChonk", () => {
       calculateChonk({
         files: 21,
         additions: 700,
-        deletions: 500
+        deletions: 500,
       })
     ).toEqual("MEGACHONKER");
   });
@@ -56,7 +56,7 @@ describe("calculateChonk", () => {
       calculateChonk({
         files: 28,
         additions: 1200,
-        deletions: 800
+        deletions: 800,
       })
     ).toEqual("OH LAWD HE COMIN!");
   });

@@ -1,10 +1,4 @@
-type ChonkInput = {
-  additions: number;
-  deletions: number;
-  files: number;
-};
-
-export const calculateChonk = ({ additions, deletions, files }: ChonkInput) => {
+exports.calculateChonk = ({ additions, deletions, files }) => {
   const score = (additions + deletions) * (files / 10);
   if (score >= 5000) {
     return "OH LAWD HE COMIN!";
