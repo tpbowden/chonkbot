@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "nodemon --exec \"npm start\"",
     "deploy": "now -t $ZEIT_NOW_TOKEN && now alias -t $ZEIT_NOW_TOKEN",
-    "start": "probot run ./src/index.js",
+    "start": "probot run ./src/chonkbot.js",
     "test": "jest",
     "test:watch": "jest --watch"
   },
