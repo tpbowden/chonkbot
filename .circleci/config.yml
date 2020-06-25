@@ -29,6 +29,18 @@ jobs:
             - v1-dependencies-
       - run: yarn test
 
+  deploy:
+    docker:
+      - image: circleci/node:10.15
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+            - v1-dependencies-
+      - run: yarn deploy
+
 workflows:
   version: 2
   main:
@@ -37,3 +49,9 @@ workflows:
       - test:
           requires:
             - install_deps
+      - deploy:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
