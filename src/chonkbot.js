@@ -1,6 +1,6 @@
 const { calculateChonk } = require("./chonk");
 
-exports.chonkbot = (app) => {
+module.exports = (app) => {
   app.on("pull_request", async (context) => {
     const {
       additions,
