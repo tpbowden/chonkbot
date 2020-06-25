@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "dev": "nodemon --exec \"npm start\"",
-    "deploy": "vercel -t $ZEIT_NOW_TOKEN -c --prod",
+    "deploy": "vercel -t $ZEIT_NOW_TOKEN deploy",
     "start": "probot run ./src/chonkbot.js",
     "test": "jest",
     "test:watch": "jest --watch"
