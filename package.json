@@ -13,6 +13,7 @@
     "probot-app"
   ],
   "scripts": {
+    "build": "ncc build ./src/chonkbot.js -m -o dist/chonkbot.js",
     "dev": "nodemon --exec \"npm start\"",
     "deploy": "now -t $ZEIT_NOW_TOKEN --prod",
     "start": "probot run ./src/chonkbot.js",
