@@ -1,8 +1,7 @@
 {
   "version": 2,
   "name": "chonkbot",
-  "builds": [{ "src": "now.js", "use": "@now/node" }],
-  "routes": [{ "src": "/", "dest": "/now.js" }],
+  "routes": [{ "src": "/", "dest": "/vercel.js" }],
   "alias": ["chonkbot.now.sh"],
   "env": {
     "APP_ID": "25486",
