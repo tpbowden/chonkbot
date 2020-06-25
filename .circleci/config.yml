@@ -39,7 +39,6 @@ jobs:
           keys:
             - v1-dependencies-{{ checksum "yarn.lock" }}
             - v1-dependencies-
-      - run: yarn build
       - run: yarn deploy
 
 workflows:
