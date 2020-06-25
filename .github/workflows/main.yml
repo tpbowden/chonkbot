@@ -11,3 +11,4 @@ jobs:
           node-version: "12"
       - run: yarn install
       - run: yarn build
+      - uses: ./action.yml
