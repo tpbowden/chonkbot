@@ -1,5 +1,9 @@
+const core = require("@actions/core");
+const github = require("@actions/github");
 const { calculateChonk } = require("./chonk");
 
+const token = core.getInput("token", { required: true });
+const octokit = github.getOctokit(token);
 const context = github.context;
 
 const {
@@ -8,13 +12,15 @@ const {
   changed_files: files,
 } = context.payload.pull_request;
 
-console.log(JSON.stringify(context, null, 2));
-
-context.github.repos.createStatus({
+octokit.checks.create({
   owner: context.payload.pull_request.head.repo.owner.login,
   repo: context.payload.pull_request.head.repo.name,
-  sha: context.payload.pull_request.head.sha,
-  state: "success",
-  description: calculateChonk({ additions, deletions, files }),
-  context: "chonkbot",
+  head_sha: context.payload.pull_request.head.sha,
+  status: "completed",
+  conclusion: "success",
+  name: "chonkbot",
+  output: {
+    title: "Chonkbot",
+    summary: calculateChonk({ additions, deletions, files }),
+  },
 });
