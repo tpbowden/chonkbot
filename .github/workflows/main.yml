@@ -2,7 +2,7 @@ name: Build and test
 on: [pull_request]
 
 jobs:
-  chonkbot:
+  main:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

@@ -20,7 +20,7 @@ octokit.checks.create({
   conclusion: "success",
   name: "chonkbot",
   output: {
-    title: "Chonkbot",
-    summary: calculateChonk({ additions, deletions, files }),
+    title: calculateChonk({ additions, deletions, files }),
+    summary: "Chonkbot",
   },
 });
