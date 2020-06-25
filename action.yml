@@ -1,0 +1,5 @@
+name: "Chonkbot"
+description: "How chonky are your pull requests?"
+runs:
+  using: "node12"
+  main: "dist/chonkbot.js"

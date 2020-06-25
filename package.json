@@ -8,26 +8,21 @@
   "homepage": "https://github.com/tpbowden/chonkbot",
   "bugs": "https://github.com/tpbowden/chonkbot/issues",
   "keywords": [
-    "probot",
     "github",
-    "probot-app"
+    "action",
+    "chonk"
   ],
   "scripts": {
     "dev": "nodemon --exec \"npm start\"",
-    "deploy": "vercel -t $ZEIT_NOW_TOKEN -c --prod",
-    "start": "probot run ./src/chonkbot.js",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@chadfawcett/probot-serverless-now": "^1.0.0",
-    "probot": "^7.5.3"
+    "@actions/github": "^3.0.0",
+    "@zeit/ncc": "^0.22.3"
   },
   "devDependencies": {
-    "jest": "^24.8.0",
-    "nodemon": "^2.0.2",
-    "smee-client": "^1.1.0",
-    "vercel": "^19.1.1"
+    "jest": "^24.8.0"
   },
   "engines": {
     "node": ">= 8.3.0"
