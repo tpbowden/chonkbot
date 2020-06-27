@@ -41,7 +41,15 @@
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
-      "@semantic-release/github",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "dist/**/*.js",
+            "package.json"
+          ]
+        }
+      ],
       "@semantic-release/release-notes-generator"
     ]
   }
