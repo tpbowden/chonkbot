@@ -1,4 +1,4 @@
-exports.calculateChonk = ({ additions, deletions, files }) => {
+const calculateChonk = ({ additions, deletions, files }) => {
   const score = (additions + deletions) * (files / 10);
   if (score >= 5000) {
     return "OH LAWD HE COMIN!";
@@ -23,10 +23,10 @@ exports.calculateChonk = ({ additions, deletions, files }) => {
   return "A fine boi";
 };
 
-exports.createCheck = (payload, octokit) => {
+const createCheck = (payload, octokit) => {
   const { additions, deletions, changed_files: files } = payload.pull_request;
 
-  return octokit.checks.create({
+  octokit.checks.create({
     owner: payload.pull_request.head.repo.owner.login,
     repo: payload.pull_request.head.repo.name,
     head_sha: payload.pull_request.head.sha,
@@ -38,4 +38,9 @@ exports.createCheck = (payload, octokit) => {
       summary: "Chonkbot",
     },
   });
+};
+
+module.exports = {
+  calculateChonk,
+  createCheck,
 };
