@@ -13,6 +13,7 @@
   "scripts": {
     "build": "ncc build ./src/action.js -o dist",
     "deploy": "vercel -c --prod -t $VERCEL_TOKEN",
+    "release": "semantic-release",
     "test": "jest",
     "test:watch": "jest --watch"
   },
