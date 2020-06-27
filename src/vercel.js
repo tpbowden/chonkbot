@@ -1,6 +1,6 @@
-const { createCheck } = require("./core");
 const { createProbot } = require("probot");
 const { findPrivateKey } = require("probot/lib/private-key");
+const { createStatus } = require("./core");
 
 const appFn = (app) => {
   app.on("pull_request", async (context) => {
