@@ -3,11 +3,8 @@ const { findPrivateKey } = require("probot/lib/private-key");
 const { createStatus } = require("./core");
 
 const appFn = (app) => {
-  console.log("App starting");
   app.on("pull_request", async (context) => {
-    console.log("Running for PR");
-    const result = await createStatus(context.payload, context.github);
-    console.log(result);
+    await createStatus(context.payload, context.github);
   });
 };
 
