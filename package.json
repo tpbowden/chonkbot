@@ -51,6 +51,7 @@
         "@semantic-release/github",
         {
           "assets": [
+            "action.yml",
             "dist/**/*.js",
             "package.json"
           ]
