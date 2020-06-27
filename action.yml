@@ -1,5 +1,16 @@
 name: "Chonkbot"
 description: "How chonky are your pull requests?"
+author: "Tom Bowden"
+
+inputs:
+  token:
+    description: GitHub token
+    required: true
+
 runs:
   using: "node12"
   main: "dist/index.js"
+
+branding:
+  color: orange
+  icon: package
