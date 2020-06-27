@@ -4,7 +4,7 @@ const { findPrivateKey } = require("probot/lib/private-key");
 
 const appFn = (app) => {
   app.on("pull_request", async (context) => {
-    await createCheck(context.payload, context.github);
+    await createStatus(context.payload, context.github);
   });
 };
 

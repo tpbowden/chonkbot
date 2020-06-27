@@ -23,24 +23,20 @@ const calculateChonk = ({ additions, deletions, files }) => {
   return "A fine boi";
 };
 
-const createCheck = (payload, octokit) => {
+const createStatus = (payload, octokit) => {
   const { additions, deletions, changed_files: files } = payload.pull_request;
 
-  octokit.checks.create({
+  octokit.createStatus({
     owner: payload.pull_request.head.repo.owner.login,
     repo: payload.pull_request.head.repo.name,
-    head_sha: payload.pull_request.head.sha,
-    status: "completed",
-    conclusion: "success",
-    name: "chonkbot",
-    output: {
-      title: calculateChonk({ additions, deletions, files }),
-      summary: "Chonkbot",
-    },
+    sha: payload.pull_request.head.sha,
+    state: "success",
+    description: calculateChonk({ additions, deletions, files }),
+    context: "chonkbot",
   });
 };
 
 module.exports = {
   calculateChonk,
-  createCheck,
+  createStatus,
 };
