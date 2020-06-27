@@ -26,7 +26,7 @@ const calculateChonk = ({ additions, deletions, files }) => {
 const createStatus = (payload, octokit) => {
   const { additions, deletions, changed_files: files } = payload.pull_request;
 
-  return octokit.repos.createStatus({
+  return octokit.repos.createCommitStatus({
     owner: payload.pull_request.head.repo.owner.login,
     repo: payload.pull_request.head.repo.name,
     sha: payload.pull_request.head.sha,
