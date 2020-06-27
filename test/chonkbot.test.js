@@ -1,4 +1,4 @@
-const { calculateChonk } = require("../src/chonk");
+const { calculateChonk } = require("../src/core");
 
 describe("calculateChonk", () => {
   it("is a fine boi for small changes", () => {

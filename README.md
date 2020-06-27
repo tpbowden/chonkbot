@@ -2,19 +2,6 @@
 
 How chonky are your pull requests?
 
-## Setup
-
-```sh
-# Install dependencies
-yarn install
-
-# Run typescript
-yarn build
-
-# Run the bot
-yarn start
-```
-
 ## How is chonkyness calculated?
 
 The formula is: `c = xy/10`

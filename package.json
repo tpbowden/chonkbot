@@ -1,6 +1,6 @@
 {
   "name": "chonkbot",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "How chonky are your PRs?",
   "author": "Tom Bowden <tom.b1992@gmail.com>",
   "license": "ISC",
@@ -8,31 +8,41 @@
   "homepage": "https://github.com/tpbowden/chonkbot",
   "bugs": "https://github.com/tpbowden/chonkbot/issues",
   "keywords": [
-    "probot",
-    "github",
-    "probot-app"
+    "github-action"
   ],
   "scripts": {
-    "dev": "nodemon --exec \"npm start\"",
-    "deploy": "now -t $ZEIT_NOW_TOKEN --prod",
-    "start": "probot run ./src/chonkbot.js",
+    "build": "ncc build ./src/action.js -o dist",
+    "deploy": "vercel -c --prod -t $VERCEL_TOKEN",
+    "release": "semantic-release",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@chadfawcett/probot-serverless-now": "^1.0.0",
-    "probot": "^7.5.3"
+    "probot": "^9.11.5",
+    "vercel": "^19.1.1"
   },
   "devDependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^3.0.0",
+    "@zeit/ncc": "^0.22.3",
     "jest": "^24.8.0",
     "nodemon": "^2.0.2",
-    "now": "^16.7.0",
-    "smee-client": "^1.1.0"
+    "semantic-release": "^17.1.1"
   },
   "engines": {
-    "node": ">= 8.3.0"
+    "node": "12.x"
   },
   "jest": {
     "testEnvironment": "node"
+  },
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/git"
+    ]
   }
 }
