@@ -23,8 +23,6 @@ module.exports = async (req, res) => {
   const name = req.headers["x-github-event"];
   const id = req.headers["x-github-delivery"];
 
-  console.log(name);
-
   if (!name) {
     res.status(400).json({ successful: false, error: "Invalid request" });
     console.error("Invalid request");
