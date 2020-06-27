@@ -3,8 +3,11 @@ const { findPrivateKey } = require("probot/lib/private-key");
 const { createStatus } = require("./core");
 
 const appFn = (app) => {
+  console.log("App starting");
   app.on("pull_request", async (context) => {
-    await createStatus(context.payload, context.github);
+    console.log("Running for PR");
+    const result = await createStatus(context.payload, context.github);
+    console.log(result);
   });
 };
 
@@ -19,6 +22,8 @@ probot.load(appFn);
 module.exports = async (req, res) => {
   const name = req.headers["x-github-event"];
   const id = req.headers["x-github-delivery"];
+
+  console.log(name);
 
   if (!name) {
     res.status(400).json({ successful: false, error: "Invalid request" });
