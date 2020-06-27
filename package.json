@@ -8,31 +8,26 @@
   "homepage": "https://github.com/tpbowden/chonkbot",
   "bugs": "https://github.com/tpbowden/chonkbot/issues",
   "keywords": [
-    "probot",
-    "github",
-    "probot-app"
+    "github-action"
   ],
   "scripts": {
-    "build": "ncc build ./src/chonkbot.js -m -o dist",
-    "dev": "nodemon --exec \"npm start\"",
-    "deploy": "now -t $ZEIT_NOW_TOKEN --prod",
-    "start": "probot run ./src/chonkbot.js",
+    "build": "ncc build ./src/action.js -m -o dist",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@actions/core": "^1.2.4",
-    "@actions/github": "^3.0.0",
-    "@zeit/ncc": "^0.22.3"
+    "probot": "^9.11.5",
+    "vercel": "^19.1.1"
   },
   "devDependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^3.0.0",
+    "@zeit/ncc": "^0.22.3",
     "jest": "^24.8.0",
-    "nodemon": "^2.0.2",
-    "now": "^16.7.0",
-    "smee-client": "^1.1.0"
+    "nodemon": "^2.0.2"
   },
   "engines": {
-    "node": ">= 8.3.0"
+    "node": "12.x"
   },
   "jest": {
     "testEnvironment": "node"
