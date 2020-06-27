@@ -1,5 +1,5 @@
 name: Build test deploy
-on: [pull_request]
+on: [push|pull_request]
 
 jobs:
   main:
@@ -13,6 +13,7 @@ jobs:
       - run: yarn test
       - run: yarn build
       - uses: ./
+        if: github.event_name == 'pull_request'
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       - run: yarn deploy

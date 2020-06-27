@@ -1,6 +1,6 @@
 {
   "name": "chonkbot",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "How chonky are your PRs?",
   "author": "Tom Bowden <tom.b1992@gmail.com>",
   "license": "ISC",
@@ -25,12 +25,23 @@
     "@actions/github": "^3.0.0",
     "@zeit/ncc": "^0.22.3",
     "jest": "^24.8.0",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "semantic-release": "^17.1.1"
   },
   "engines": {
     "node": "12.x"
   },
   "jest": {
     "testEnvironment": "node"
+  },
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/git"
+    ]
   }
 }
