@@ -47,16 +47,7 @@
           "npmPublish": false
         }
       ],
-      [
-        "@semantic-release/github",
-        {
-          "assets": [
-            "action.yml",
-            "dist/**/*.js",
-            "package.json"
-          ]
-        }
-      ],
+      "@semantic-release/github",
       "@semantic-release/release-notes-generator"
     ]
   }
