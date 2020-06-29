@@ -5,7 +5,12 @@ const { createStatus } = require("./core");
 
 const appFn = (app) => {
   app.on("pull_request", async (context) => {
-    await createStatus(context.payload, context.github);
+    const id = context.payload.installation.id;
+    const accessToken = await app.app.getInstallationAccessToken({
+      installationId: id,
+    });
+    const github = new Octokit({ auth: accessToken });
+    await createStatus(context.payload, github);
   });
 };
 
@@ -13,7 +18,6 @@ const probot = createProbot({
   id: process.env.APP_ID,
   secret: process.env.WEBHOOK_SECRET,
   cert: findPrivateKey(),
-  Octokit,
 });
 
 probot.load(appFn);
