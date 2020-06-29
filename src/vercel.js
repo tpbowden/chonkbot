@@ -1,3 +1,4 @@
+const { Octokit } = require("@octokit/rest");
 const { createProbot } = require("probot");
 const { findPrivateKey } = require("probot/lib/private-key");
 const { createStatus } = require("./core");
@@ -12,6 +13,7 @@ const probot = createProbot({
   id: process.env.APP_ID,
   secret: process.env.WEBHOOK_SECRET,
   cert: findPrivateKey(),
+  Octokit,
 });
 
 probot.load(appFn);
