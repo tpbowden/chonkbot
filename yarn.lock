@@ -7,17 +7,17 @@
   resolved "https://registry.yarnpkg.com/@actions/core/-/core-1.2.4.tgz#96179dbf9f8d951dd74b40a0dbd5c22555d186ab"
   integrity sha512-YJCEq8BE3CdN8+7HPZ/4DxJjk/OkZV2FFIf+DlZTC/4iBlzYCD5yjRR6eiOS5llO11zbRltIRuKAjMKaWTE6cg==
 
-"@actions/github@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@actions/github/-/github-4.0.0.tgz#d520483151a2bf5d2dc9cd0f20f9ac3a2e458816"
-  integrity sha512-Ej/Y2E+VV6sR9X7pWL5F3VgEWrABaT292DRqRU6R4hnQjPtC/zD3nagxVdXWiRQvYDh8kHXo7IDmG42eJ/dOMA==
+"@actions/github@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@actions/github/-/github-3.0.0.tgz#ce1b721a266ad5ac522da0c9c013c999009604bf"
+  integrity sha512-zSYo0Pzh/AZt0DCBjCUhd9lNBECbbWnPqq5L32DZDTuEhjGJM8VSgOpKSol9climaJxhPJQhu+vUZIZuQi4Z1w==
   dependencies:
-    "@actions/http-client" "^1.0.8"
-    "@octokit/core" "^3.0.0"
-    "@octokit/plugin-paginate-rest" "^2.2.3"
-    "@octokit/plugin-rest-endpoint-methods" "^4.0.0"
+    "@actions/http-client" "^1.0.3"
+    "@octokit/core" "^2.5.1"
+    "@octokit/plugin-paginate-rest" "^2.2.0"
+    "@octokit/plugin-rest-endpoint-methods" "^3.10.0"
 
-"@actions/http-client@^1.0.8":
+"@actions/http-client@^1.0.3":
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/@actions/http-client/-/http-client-1.0.8.tgz#8bd76e8eca89dc8bcf619aa128eba85f7a39af45"
   integrity sha512-G4JjJ6f9Hb3Zvejj+ewLLKLf99ZC+9v+yCxoYf9vSyH+WkzPLB2LuUtRMGNkooMqdugGBFStIKXOuvH1W+EctA==
@@ -522,22 +522,10 @@
   dependencies:
     "@octokit/types" "^5.0.0"
 
-"@octokit/core@^2.4.3":
+"@octokit/core@^2.4.3", "@octokit/core@^2.5.1":
   version "2.5.4"
   resolved "https://registry.yarnpkg.com/@octokit/core/-/core-2.5.4.tgz#f7fbf8e4f86c5cc2497a8887ba2561ec8d358054"
   integrity sha512-HCp8yKQfTITYK+Nd09MHzAlP1v3Ii/oCohv0/TW9rhSLvzb98BOVs2QmVYuloE6a3l6LsfyGIwb6Pc4ycgWlIQ==
-  dependencies:
-    "@octokit/auth-token" "^2.4.0"
-    "@octokit/graphql" "^4.3.1"
-    "@octokit/request" "^5.4.0"
-    "@octokit/types" "^5.0.0"
-    before-after-hook "^2.1.0"
-    universal-user-agent "^5.0.0"
-
-"@octokit/core@^3.0.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@octokit/core/-/core-3.1.0.tgz#9c3c9b23f7504668cfa057f143ccbf0c645a0ac9"
-  integrity sha512-yPyQSmxIXLieEIRikk2w8AEtWkFdfG/LXcw1KvEtK3iP0ENZLW/WYQmdzOKqfSaLhooz4CJ9D+WY79C8ZliACw==
   dependencies:
     "@octokit/auth-token" "^2.4.0"
     "@octokit/graphql" "^4.3.1"
@@ -579,7 +567,7 @@
   dependencies:
     "@octokit/types" "^2.0.1"
 
-"@octokit/plugin-paginate-rest@^2.2.0", "@octokit/plugin-paginate-rest@^2.2.3":
+"@octokit/plugin-paginate-rest@^2.2.0":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@octokit/plugin-paginate-rest/-/plugin-paginate-rest-2.2.3.tgz#a6ad4377e7e7832fb4bdd9d421e600cb7640ac27"
   integrity sha512-eKTs91wXnJH8Yicwa30jz6DF50kAh7vkcqCQ9D7/tvBAP5KKkg6I2nNof8Mp/65G0Arjsb4QcOJcIEQY+rK1Rg==
@@ -599,20 +587,12 @@
     "@octokit/types" "^2.0.1"
     deprecation "^2.3.1"
 
-"@octokit/plugin-rest-endpoint-methods@3.17.0":
+"@octokit/plugin-rest-endpoint-methods@3.17.0", "@octokit/plugin-rest-endpoint-methods@^3.10.0":
   version "3.17.0"
   resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-3.17.0.tgz#d8ba04eb883849dd98666c55bf49d8c9fe7be055"
   integrity sha512-NFV3vq7GgoO2TrkyBRUOwflkfTYkFKS0tLAPym7RNpkwLCttqShaEGjthOsPEEL+7LFcYv3mU24+F2yVd3npmg==
   dependencies:
     "@octokit/types" "^4.1.6"
-    deprecation "^2.3.1"
-
-"@octokit/plugin-rest-endpoint-methods@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-4.0.0.tgz#b02a2006dda8e908c3f8ab381dd5475ef5a810a8"
-  integrity sha512-emS6gysz4E9BNi9IrCl7Pm4kR+Az3MmVB0/DoDCmF4U48NbYG3weKyDlgkrz6Jbl4Mu4nDx8YWZwC4HjoTdcCA==
-  dependencies:
-    "@octokit/types" "^5.0.0"
     deprecation "^2.3.1"
 
 "@octokit/plugin-retry@^3.0.1":
@@ -736,24 +716,10 @@
     lodash "^4.17.4"
     micromatch "^4.0.2"
 
-"@semantic-release/error@^2.1.0", "@semantic-release/error@^2.2.0":
+"@semantic-release/error@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-2.2.0.tgz#ee9d5a09c9969eade1ec864776aeda5c5cddbbf0"
   integrity sha512-9Tj/qn+y2j+sjCI3Jd+qseGtHjOAeg7dU2/lVcqIQ9TV3QDaDXDYXcoOHU+7o2Hwh8L8ymL4gfuO7KxDs3q2zg==
-
-"@semantic-release/git@^9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-9.0.0.tgz#304c4883c87d095b1faaae93300f1f1e0466e9a5"
-  integrity sha512-AZ4Zha5NAPAciIJH3ipzw/WU9qLAn8ENaoVAhD6srRPxTpTzuV3NhNh14rcAo8Paj9dO+5u4rTKcpetOBluYVw==
-  dependencies:
-    "@semantic-release/error" "^2.1.0"
-    aggregate-error "^3.0.0"
-    debug "^4.0.0"
-    dir-glob "^3.0.0"
-    execa "^4.0.0"
-    lodash "^4.17.4"
-    micromatch "^4.0.0"
-    p-reduce "^2.0.0"
 
 "@semantic-release/github@^7.0.0":
   version "7.0.7"
@@ -5258,7 +5224,7 @@ micromatch@^3.1.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
 
-micromatch@^4.0.0, micromatch@^4.0.2:
+micromatch@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.2.tgz#4fcb0999bf9fbc2fcbdd212f6d629b9a56c39259"
   integrity sha512-y7FpHSbMUMoyPbYUSzO6PaZ6FyRnQOpHuKwbo1G+Knck95XVU4QAiKdGEnj5wwoS7PlOgthX/09u5iFJ+aYf5Q==
