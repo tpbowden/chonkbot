@@ -18,7 +18,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@octokit/rest": "^18.0.3",
+    "@octokit/rest": "^18.3.3",
     "probot": "^9.11.5",
     "vercel": "^19.2.0"
   },
