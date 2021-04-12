@@ -13,10 +13,7 @@ const appFn = (app) => {
   });
 };
 
-const probot = createProbot({
-  appId: process.env.APP_ID,
-  secret: process.env.WEBHOOK_SECRET,
-});
+const probot = createProbot();
 
 probot.load(appFn);
 
