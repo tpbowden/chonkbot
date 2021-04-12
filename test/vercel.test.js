@@ -4,7 +4,6 @@ const fetch = require("node-fetch");
 const { sign } = require("@octokit/webhooks");
 const middleware = require("../src/vercel");
 const payload = require("./fixtures/pullRequestOpened.json");
-const { doesNotMatch } = require("assert");
 
 const server = http.createServer(middleware);
 
@@ -20,7 +19,7 @@ describe("Vercel middleware", () => {
   beforeAll(async () => {
     nock.disableNetConnect();
     nock.enableNetConnect("127.0.0.1");
-    await new Promise((resolve) => {
+    await new Promise((resolve, reject) => {
       server.listen(0, "127.0.0.1", (e) => {
         if (e) {
           reject(e);
