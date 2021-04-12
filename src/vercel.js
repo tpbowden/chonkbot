@@ -4,11 +4,7 @@ const { createStatus } = require("./core");
 
 const appFn = (app) => {
   app.on("pull_request", async (context) => {
-    const id = context.payload.installation.id;
-    const accessToken = await app.app.getInstallationAccessToken({
-      installationId: id,
-    });
-    const github = new Octokit({ auth: accessToken });
+    const github = context.octokit;
     await createStatus(context.payload, github);
   });
 };
