@@ -14,7 +14,7 @@
     "build": "ncc build ./src/action.js -o dist",
     "deploy": "vercel -c --prod -t $VERCEL_TOKEN",
     "release": "semantic-release",
-    "test": "jest",
+    "test": "WEBHOOK_SECRET=mysecret PRIVATE_KEY=$(cat ./test/fixtures/key.pem) jest",
     "test:watch": "jest --watch"
   },
   "dependencies": {
@@ -28,6 +28,8 @@
     "@semantic-release/git": "^9.0.0",
     "@zeit/ncc": "^0.22.3",
     "jest": "^26.6.3",
+    "nock": "^13.0.11",
+    "node-fetch": "^2.6.1",
     "nodemon": "^2.0.7",
     "semantic-release": "^17.4.2"
   },

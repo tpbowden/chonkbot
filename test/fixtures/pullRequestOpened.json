@@ -1,0 +1,16 @@
+{
+  "pull_request": {
+    "additions": 550,
+    "deletions": 20,
+    "changed_files": 8,
+    "head": {
+      "sha": "testcommitsha",
+      "repo": {
+        "name": "testrepo",
+        "owner": {
+          "login": "testowner"
+        }
+      }
+    }
+  }
+}
