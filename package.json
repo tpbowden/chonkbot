@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@octokit/rest": "^18.5.3",
-    "probot": "^11.1.1",
+    "probot": "^11.2.4",
     "vercel": "^22.0.1"
   },
   "devDependencies": {
