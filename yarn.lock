@@ -731,7 +731,7 @@
     "@octokit/types" "^4.1.6"
     deprecation "^2.3.1"
 
-"@octokit/plugin-rest-endpoint-methods@5.0.1":
+"@octokit/plugin-rest-endpoint-methods@5.0.1", "@octokit/plugin-rest-endpoint-methods@^5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-5.0.1.tgz#631b8d4edc6798b03489911252a25f2a4e58c594"
   integrity sha512-vvWbPtPqLyIzJ7A4IPdTl+8IeuKAwMJ4LjvmqWOOdfSuqWQYZXq2CEd0hsnkidff2YfKlguzujHs/reBdAx8Sg==
@@ -739,7 +739,7 @@
     "@octokit/types" "^6.13.1"
     deprecation "^2.3.1"
 
-"@octokit/plugin-rest-endpoint-methods@^4.0.0", "@octokit/plugin-rest-endpoint-methods@^4.4.1":
+"@octokit/plugin-rest-endpoint-methods@^4.0.0":
   version "4.15.0"
   resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-4.15.0.tgz#120b649144614989413915d5fff9198c4f7535fd"
   integrity sha512-1AF9GM/Ywk8ukUM5seDRj286GdFpdfsHeOrOPBV2rVtRN7MQNzRIcw8W5sb4JPerjQ0WcRRwAwQyufg64BxJkA==
@@ -818,14 +818,7 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@octokit/types@^6.0.1", "@octokit/types@^6.0.3", "@octokit/types@^6.1.1", "@octokit/types@^6.10.0", "@octokit/types@^6.11.0", "@octokit/types@^6.12.2", "@octokit/types@^6.13.0", "@octokit/types@^6.7.1":
-  version "6.13.0"
-  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.13.0.tgz#779e5b7566c8dde68f2f6273861dd2f0409480d0"
-  integrity sha512-W2J9qlVIU11jMwKHUp5/rbVUeErqelCsO5vW5PKNb7wAXQVUz87Rc+imjlEvpvbH8yUb+KHmv8NEjVZdsdpyxA==
-  dependencies:
-    "@octokit/openapi-types" "^6.0.0"
-
-"@octokit/types@^6.13.1":
+"@octokit/types@^6.0.1", "@octokit/types@^6.0.3", "@octokit/types@^6.1.1", "@octokit/types@^6.10.0", "@octokit/types@^6.11.0", "@octokit/types@^6.12.2", "@octokit/types@^6.13.0", "@octokit/types@^6.13.1", "@octokit/types@^6.7.1":
   version "6.13.1"
   resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.13.1.tgz#85f447f97dc7edb672f221df51f56a51785c131a"
   integrity sha512-UF/PL0y4SKGx/p1azFf7e6j9lB78tVwAFvnHtslzOJ6VipshYks74qm9jjTEDlCyaTmbhbk2h3Run5l0CtCF6A==
@@ -7194,15 +7187,15 @@ pretty-format@^26.6.2:
     ansi-styles "^4.0.0"
     react-is "^17.0.1"
 
-probot@^11.1.1:
-  version "11.1.1"
-  resolved "https://registry.yarnpkg.com/probot/-/probot-11.1.1.tgz#a7db36076ec0e568e55bb60dc79c9fc4cf82349d"
-  integrity sha512-Geth3H15QVHk1avdnuFyPv90qL6dXOVzSZih5lsnQv4iloUnJxw3BvTvYn4jGZ7Z1OnpzupbfNDwdQr1f3yKfg==
+probot@^11.2.3:
+  version "11.2.3"
+  resolved "https://registry.yarnpkg.com/probot/-/probot-11.2.3.tgz#daabcf556ad2789bfb6eff2338e1338dd96ed46d"
+  integrity sha512-LHUOvVPQb8QC8nOHqZXvznjgDpdBZIdGTsgZ8xYmRbN7tOaHWC4wqlOq55MGCYhlH5KuvkiXlXbQ8qFuTVjzWA==
   dependencies:
     "@octokit/core" "^3.2.4"
     "@octokit/plugin-enterprise-compatibility" "^1.2.8"
     "@octokit/plugin-paginate-rest" "^2.6.2"
-    "@octokit/plugin-rest-endpoint-methods" "^4.4.1"
+    "@octokit/plugin-rest-endpoint-methods" "^5.0.1"
     "@octokit/plugin-retry" "^3.0.6"
     "@octokit/plugin-throttling" "^3.3.4"
     "@octokit/types" "^6.1.1"
