@@ -4,16 +4,16 @@ const github = require("@actions/github");
 const { createStatus } = require("./core");
 
 const run = async () => {
-  const token = core.getInput("token", { required: true });
-  const app = new Octokit({
-    auth: token,
-  });
+  try {
+    const token = core.getInput("token", { required: true });
+    const app = new Octokit({
+      auth: token,
+    });
 
-  await createStatus(github.context.payload, app);
+    await createStatus(github.context.payload, app);
+  } catch (e) {
+    core.setFailed(`Chonkbot failed with error: ${e}`);
+  }
 };
 
-try {
-  run();
-} catch (e) {
-  core.error(e);
-}
+run();
