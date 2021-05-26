@@ -12,7 +12,9 @@ describe("GitHub action", () => {
     jest.resetModules();
   });
 
-  it("updates the status", async (done) => {
+  it("updates the status", async () => {
+    expect.assertions(2);
+
     process.env.GITHUB_REPOSITORY = "testuser/testrepo";
     process.env.GITHUB_EVENT_PATH = path.join(
       __dirname,
@@ -34,9 +36,8 @@ describe("GitHub action", () => {
 
     run();
 
-    setTimeout(() => {
-      expect(scope.isDone()).toBe(true);
-      done();
-    }, 1);
+    await new Promise((resolve) => process.nextTick(resolve));
+
+    expect(scope.isDone()).toBe(true);
   });
 });

@@ -34,7 +34,9 @@ describe("Vercel middleware", () => {
     server.close();
   });
 
-  it("updates the status", async (done) => {
+  it("updates the status", async () => {
+    expect.assertions(3);
+
     const port = server.address().port;
     nock("https://api.github.com")
       .post("/app/installations/698214/access_tokens")
@@ -42,16 +44,11 @@ describe("Vercel middleware", () => {
 
     const scope = nock("https://api.github.com")
       .post("/repos/testowner/testrepo/statuses/testcommitsha", (body) => {
-        try {
-          expect(body).toEqual({
-            context: "chonkbot",
-            description: "He chomnk",
-            state: "success",
-          });
-          done();
-        } catch (e) {
-          done(e);
-        }
+        expect(body).toEqual({
+          context: "chonkbot",
+          description: "He chomnk",
+          state: "success",
+        });
         return true;
       })
       .reply(200);
