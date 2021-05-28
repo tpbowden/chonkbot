@@ -19,7 +19,7 @@
     "test": "WEBHOOK_SECRET=mysecret PRIVATE_KEY=$(cat ./test/fixtures/key.pem) jest"
   },
   "dependencies": {
-    "@octokit/rest": "^18.5.3",
+    "@octokit/rest": "^18.5.4",
     "probot": "^11.3.0",
     "vercel": "^23.0.0"
   },
