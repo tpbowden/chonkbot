@@ -871,11 +871,6 @@
     "@octokit/types" "^6.12.2"
     btoa-lite "^1.0.0"
 
-"@octokit/openapi-types@^6.2.0":
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-6.2.0.tgz#6ea796b20c7111b9e422a4d607f796c1179622cd"
-  integrity sha512-V2vFYuawjpP5KUb8CPYsq20bXT4qnE8sH1QKpYqUlcNOntBiRr/VzGVvY0s+YXGgrVbFUVO4EI0VnHYSVBWfBg==
-
 "@octokit/openapi-types@^7.2.2":
   version "7.2.2"
   resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-7.2.2.tgz#03b44312bba4e0fb002cb33d6962ca8d81d4e8ce"
@@ -988,14 +983,7 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@octokit/types@^6.0.1", "@octokit/types@^6.0.3", "@octokit/types@^6.1.1", "@octokit/types@^6.10.0", "@octokit/types@^6.11.0", "@octokit/types@^6.12.2", "@octokit/types@^6.7.1":
-  version "6.14.0"
-  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.14.0.tgz#587529b4a461d8b7621b99845718dc5c79281f52"
-  integrity sha512-43qHvDsPsKgNt4W4al3dyU6s2XZ7ZMsiiIw8rQcM9CyEo7g9W8/6m1W4xHuRqmEjTfG1U4qsE/E4Jftw1/Ak1g==
-  dependencies:
-    "@octokit/openapi-types" "^6.2.0"
-
-"@octokit/types@^6.16.0":
+"@octokit/types@^6.0.1", "@octokit/types@^6.0.3", "@octokit/types@^6.1.1", "@octokit/types@^6.10.0", "@octokit/types@^6.11.0", "@octokit/types@^6.12.2", "@octokit/types@^6.16.0", "@octokit/types@^6.7.1":
   version "6.16.1"
   resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.16.1.tgz#53f44878c14aa1e674b04941eda5c7578362297d"
   integrity sha512-RCPbnJs7EyC5QFHGsD/E+5TvwjnlzlQMzbE57HiHnoeL1Qws2cRXyBSyNkTp0CuEkD4SfMoQ0qToUoE+b21D5Q==
@@ -6944,10 +6932,10 @@ pretty-format@^27.0.1:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
-probot@^11.3.0:
-  version "11.3.0"
-  resolved "https://registry.yarnpkg.com/probot/-/probot-11.3.0.tgz#f48bc3b07b96d104dba076976e581db3806c9216"
-  integrity sha512-Af+CJJ9MR982HnMRThzOUnp9QKKjxmpkzi5y0mHeAE6Rk7PXwuFcfIZlT1+L5CjLYkEhcTJhucrgzGW4QUJ8Pw==
+probot@^11.3.2:
+  version "11.3.2"
+  resolved "https://registry.yarnpkg.com/probot/-/probot-11.3.2.tgz#1260d63b645225105974056cc7a38228811d564b"
+  integrity sha512-JN+jzjkVAHFj6pBQgvO27vjW9IwA9QOtSLNxxak4rnalNSo09u1Srr01TlqYoalbsNiwbVx2tXvBSDZZLkXCcw==
   dependencies:
     "@octokit/core" "^3.2.4"
     "@octokit/plugin-enterprise-compatibility" "^1.2.8"
