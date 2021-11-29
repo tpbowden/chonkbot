@@ -884,16 +884,6 @@
     "@octokit/types" "^6.12.2"
     btoa-lite "^1.0.0"
 
-"@octokit/openapi-types@^7.2.3":
-  version "7.2.3"
-  resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-7.2.3.tgz#a7105796db9b85d25d3feba9a1785a124c7803e4"
-  integrity sha512-V1ycxkR19jqbIl3evf2RQiMRBvTNRi+Iy9h20G5OP5dPfEF6GJ1DPlUeiZRxo2HJxRr+UA4i0H1nn4btBDPFrw==
-
-"@octokit/openapi-types@^7.3.2":
-  version "7.3.2"
-  resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-7.3.2.tgz#065ce49b338043ec7f741316ce06afd4d459d944"
-  integrity sha512-oJhK/yhl9Gt430OrZOzAl2wJqR0No9445vmZ9Ey8GjUZUpwuu/vmEFP0TDhDXdpGDoxD6/EIFHJEcY8nHXpDTA==
-
 "@octokit/openapi-types@^8.2.1":
   version "8.2.1"
   resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-8.2.1.tgz#102e752a7378ff8d21057c70fd16f1c83856d8c5"
@@ -1027,35 +1017,32 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@octokit/types@^6.0.1", "@octokit/types@^6.0.3", "@octokit/types@^6.1.1", "@octokit/types@^6.10.0", "@octokit/types@^6.11.0", "@octokit/types@^6.12.2", "@octokit/types@^6.7.1":
-  version "6.16.2"
-  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.16.2.tgz#62242e0565a3eb99ca2fd376283fe78b4ea057b4"
-  integrity sha512-wWPSynU4oLy3i4KGyk+J1BLwRKyoeW2TwRHgwbDz17WtVFzSK2GOErGliruIx8c+MaYtHSYTx36DSmLNoNbtgA==
-  dependencies:
-    "@octokit/openapi-types" "^7.2.3"
-
-"@octokit/types@^6.16.1":
-  version "6.16.4"
-  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.16.4.tgz#d24f5e1bacd2fe96d61854b5bda0e88cf8288dfe"
-  integrity sha512-UxhWCdSzloULfUyamfOg4dJxV9B+XjgrIZscI0VCbp4eNrjmorGEw+4qdwcpTsu6DIrm9tQsFQS2pK5QkqQ04A==
-  dependencies:
-    "@octokit/openapi-types" "^7.3.2"
-
-"@octokit/types@^6.18.1":
+"@octokit/types@^6.0.1", "@octokit/types@^6.0.3", "@octokit/types@^6.1.1", "@octokit/types@^6.10.0", "@octokit/types@^6.11.0", "@octokit/types@^6.12.2", "@octokit/types@^6.16.1", "@octokit/types@^6.18.1", "@octokit/types@^6.7.1":
   version "6.18.1"
   resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.18.1.tgz#a6db178536e649fd5d67a7b747754bcc43940be4"
   integrity sha512-5YsddjO1U+xC8ZYKV8yZYebW55PCc7qiEEeZ+wZRr6qyclynzfyD65KZ5FdtIeP0/cANyFaD7hV69qElf1nMsQ==
   dependencies:
     "@octokit/openapi-types" "^8.2.1"
 
-"@octokit/webhooks@7.21.0":
-  version "7.21.0"
-  resolved "https://registry.yarnpkg.com/@octokit/webhooks/-/webhooks-7.21.0.tgz#2aee3404aa311740a5f4ea37b070268752e21b02"
-  integrity sha512-Mj7Pa6JZgSjfzQfYF3Bf5KpyhzEBv4kHbj2EjCB/vMQiZCiiW30j5rS6t/d0ZN0FBrlSOuJIT+YU8IJt30VyWA==
+"@octokit/webhooks-methods@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@octokit/webhooks-methods/-/webhooks-methods-2.0.0.tgz#1108b9ea661ca6c81e4a8bfa63a09eb27d5bc2db"
+  integrity sha512-35cfQ4YWlnZnmZKmIxlGPUPLtbkF8lr/A/1Sk1eC0ddLMwQN06dOuLc+dI3YLQS+T+MoNt3DIQ0NynwgKPilig==
+
+"@octokit/webhooks-types@4.17.1":
+  version "4.17.1"
+  resolved "https://registry.yarnpkg.com/@octokit/webhooks-types/-/webhooks-types-4.17.1.tgz#850a29131c9cb03c22ad76a3c9d5c55500ce9beb"
+  integrity sha512-L8VCfue+t5oopkPr81f2+LgWLAZbaX6gyu5fVYhWq8QE/QmzdyHuQr5zbUbCfAGAC0a1eRPPYmwPFPFOncku7A==
+
+"@octokit/webhooks@^9.8.4":
+  version "9.20.0"
+  resolved "https://registry.yarnpkg.com/@octokit/webhooks/-/webhooks-9.20.0.tgz#ff68774f7c0aad916959566801d42fb56c4bf116"
+  integrity sha512-NUFZKaQkGJl19FIfyaHdwjpR7XG0ekT3EFICjaz1vOFb/Dp/ebg9hn8bOwTusTsZjD0oPfPWxuHPKprBJ52swA==
   dependencies:
     "@octokit/request-error" "^2.0.2"
+    "@octokit/webhooks-methods" "^2.0.0"
+    "@octokit/webhooks-types" "4.17.1"
     aggregate-error "^3.1.0"
-    debug "^4.0.0"
 
 "@probot/get-private-key@^1.1.0":
   version "1.1.0"
@@ -1388,10 +1375,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/ioredis@^4.17.8":
-  version "4.22.3"
-  resolved "https://registry.yarnpkg.com/@types/ioredis/-/ioredis-4.22.3.tgz#72762efa0374c4a2e879ef697c6c3e4a47f9d641"
-  integrity sha512-V23g0XZUmkm0Hp/GsQYV5Wz12ynm6h6lyi5v/o63iyqFV7+8t3k5YxCnFWVWFEjO6mvRI7V6f7YxNVxIjPsSUw==
+"@types/ioredis@^4.27.1":
+  version "4.28.1"
+  resolved "https://registry.yarnpkg.com/@types/ioredis/-/ioredis-4.28.1.tgz#27d66f4c0540145826d984b6d0a5b54bbb88c32a"
+  integrity sha512-raYHPqRWrfnEoym94BY28mG1+tcZqh3dsp2q7x5IyMAAEvIdu+H0X8diASMpncIm+oHyH9dalOeOnGOL/YnuOA==
   dependencies:
     "@types/node" "*"
 
@@ -4329,16 +4316,17 @@ invert-kv@^2.0.0:
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-2.0.0.tgz#7393f5afa59ec9ff5f67a27620d11c226e3eec02"
   integrity sha512-wPVv/y/QQ/Uiirj/vh3oP+1Ww+AWehmi1g5fFWGPF6IpCBCDVrhgHRMvrLfdYcwDh3QJbGXDW4JAuzxElLSqKA==
 
-ioredis@^4.19.2:
-  version "4.26.0"
-  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.26.0.tgz#dbbfb5e5da085fc2b1de8174db50fa42f9fed66a"
-  integrity sha512-nh39okWezWWZ35/RxXXzHksMFt4WCaev8SNO2kozRDeVdEAJj16EarqPP3JeHz8IEjEXN5CiVtbWMk62Z0eveQ==
+ioredis@^4.27.8:
+  version "4.28.1"
+  resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.28.1.tgz#c2a7038d6a187e020d7045e11d6a677e8b51f785"
+  integrity sha512-7gcrUJEcPHWy+eEyq6wIZpXtfHt8crhbc5+z0sqrnHUkwBblXinygfamj+/jx83Qo+2LW3q87Nj2VsuH6BF2BA==
   dependencies:
     cluster-key-slot "^1.1.0"
     debug "^4.3.1"
     denque "^1.1.0"
     lodash.defaults "^4.2.0"
     lodash.flatten "^4.4.0"
+    lodash.isarguments "^3.1.0"
     p-map "^2.1.0"
     redis-commands "1.7.0"
     redis-errors "^1.2.0"
@@ -5595,6 +5583,11 @@ lodash.includes@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.includes/-/lodash.includes-4.3.0.tgz#60bb98a87cb923c68ca1e51325483314849f553f"
   integrity sha1-YLuYqHy5I8aMoeUTJUgzFISfVT8=
+
+lodash.isarguments@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
+  integrity sha1-L1c9hcaiQon/AGY7SRwdM4/zRYo=
 
 lodash.isboolean@^3.0.3:
   version "3.0.3"
@@ -6979,10 +6972,10 @@ pretty-format@^27.0.2:
     ansi-styles "^5.0.0"
     react-is "^17.0.1"
 
-probot@^11.4.1:
-  version "11.4.1"
-  resolved "https://registry.yarnpkg.com/probot/-/probot-11.4.1.tgz#c21c6483a41594917f636bddf6a253b0600e5b95"
-  integrity sha512-kxNImVNZIheWtDUFbQSp0F1Qb7EEi4MvZRtKFBQPS3GSklC+u4oqnILfH4GsmXs0g+brrIX7g8qf/SUyDkw2sw==
+probot@^12.1.2:
+  version "12.1.2"
+  resolved "https://registry.yarnpkg.com/probot/-/probot-12.1.2.tgz#8cc5075edc4876cb1ec3294e64a33f6bb4a76d0f"
+  integrity sha512-T0EsemJRUSpdp1wqEDqJ4yDYTG960nnzn1XFgeM3T1xKkkq2zqiZmGKyqtpjG4WnX+63WaJsvv59AkiCF0imxQ==
   dependencies:
     "@octokit/core" "^3.2.4"
     "@octokit/plugin-enterprise-compatibility" "^1.2.8"
@@ -6991,12 +6984,12 @@ probot@^11.4.1:
     "@octokit/plugin-retry" "^3.0.6"
     "@octokit/plugin-throttling" "^3.3.4"
     "@octokit/types" "^6.1.1"
-    "@octokit/webhooks" "7.21.0"
+    "@octokit/webhooks" "^9.8.4"
     "@probot/get-private-key" "^1.1.0"
     "@probot/octokit-plugin-config" "^1.0.0"
     "@probot/pino" "^2.2.0"
     "@types/express" "^4.17.9"
-    "@types/ioredis" "^4.17.8"
+    "@types/ioredis" "^4.27.1"
     "@types/pino" "^6.3.4"
     "@types/pino-http" "^5.0.6"
     "@types/update-notifier" "^5.0.0"
@@ -7007,7 +7000,7 @@ probot@^11.4.1:
     eventsource "^1.0.7"
     express "^4.17.1"
     hbs "^4.1.1"
-    ioredis "^4.19.2"
+    ioredis "^4.27.8"
     js-yaml "^3.14.1"
     lru-cache "^6.0.0"
     octokit-auth-probot "^1.2.2"
