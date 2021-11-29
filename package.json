@@ -30,7 +30,7 @@
     "@zeit/ncc": "^0.22.3",
     "eslint": "^7.31.0",
     "eslint-plugin-jest": "^24.3.6",
-    "jest": "^27.0.5",
+    "jest": "^27.4.0",
     "nock": "^13.1.0",
     "node-fetch": "^2.6.1",
     "nodemon": "^2.0.7",
