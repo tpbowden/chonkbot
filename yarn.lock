@@ -531,7 +531,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/core@npm:^27.0.6, @jest/core@npm:^27.4.3":
+"@jest/core@npm:^27.4.3":
   version: 27.4.3
   resolution: "@jest/core@npm:27.4.3"
   dependencies:
@@ -2760,7 +2760,7 @@ __metadata:
     "@vercel/ncc": 0.32.0
     eslint: 8.3.0
     eslint-plugin-jest: 25.3.0
-    jest: 27.0.6
+    jest: 27.4.3
     nock: 13.2.1
     node-fetch: 2.6.6
     nodemon: 2.0.15
@@ -5304,7 +5304,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-cli@npm:^27.0.6":
+"jest-cli@npm:^27.4.3":
   version: 27.4.3
   resolution: "jest-cli@npm:27.4.3"
   dependencies:
@@ -5743,13 +5743,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:27.0.6":
-  version: 27.0.6
-  resolution: "jest@npm:27.0.6"
+"jest@npm:27.4.3":
+  version: 27.4.3
+  resolution: "jest@npm:27.4.3"
   dependencies:
-    "@jest/core": ^27.0.6
+    "@jest/core": ^27.4.3
     import-local: ^3.0.2
-    jest-cli: ^27.0.6
+    jest-cli: ^27.4.3
   peerDependencies:
     node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
   peerDependenciesMeta:
@@ -5757,7 +5757,7 @@ __metadata:
       optional: true
   bin:
     jest: bin/jest.js
-  checksum: 60de979335cf28c03f8fdf8ba7aee240d72e11d2b918e50ed31a835b08debf593bca6ad058d3c323ffb670dcd8d5c060c22e0ec9a716fdb40ffa2134db7d6aca
+  checksum: 0c76bbc996e496f11d7daa2e01b5c90ebf9e2587a1d1fa7e0cb8afc7c50abda24874766e107f9080103795af9ac80a06c83d61d9fc50762bd6d915db40a1f1df
   languageName: node
   linkType: hard
 
