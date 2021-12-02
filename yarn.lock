@@ -1472,7 +1472,7 @@
   resolved "https://registry.yarnpkg.com/@vercel/go/-/go-1.2.2.tgz#47686fc8f381767428d855bdd846b66efe2f742f"
   integrity sha512-Oo1lXjXmDrSqdF3LKCWXJGU9DInq5aMe6weQSoWnKRvSZ6v4at2x19ltHYvgUO95y4tbdzqPLRKFNUSQEJVdjQ==
 
-"@vercel/ncc@0.22.3":
+"@vercel/ncc@0.32.0":
   version "0.32.0"
   resolved "https://registry.yarnpkg.com/@vercel/ncc/-/ncc-0.32.0.tgz#42faafe0f41ea2a8e857785c10a31ef122f2416e"
   integrity sha512-S/SxTHHTbBQSOutpgnqEn+LyTfZcq9xMRAnzY05HpGVjxjmfmvg6SWZZkbW/GJIFznMmHGeGOrI1MEBD7efIkA==
