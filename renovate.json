@@ -10,5 +10,7 @@
       "rebaseWhen": "behind-base-branch"
     }
   ],
+  "separateMinorPatch": true,
+  "stabilityDays": 3,
   "timezone": "Europe/London"
 }
