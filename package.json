@@ -26,7 +26,7 @@
   "devDependencies": {
     "@actions/core": "1.4.0",
     "@actions/github": "5.0.0",
-    "@semantic-release/git": "9.0.0",
+    "@semantic-release/git": "9.0.1",
     "@zeit/ncc": "0.22.3",
     "eslint": "7.31.0",
     "eslint-plugin-jest": "24.3.7",
@@ -35,7 +35,7 @@
     "node-fetch": "2.6.6",
     "nodemon": "2.0.15",
     "prettier": "2.3.2",
-    "semantic-release": "17.4.4"
+    "semantic-release": "17.4.7"
   },
   "engines": {
     "node": "12.x"
