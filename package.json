@@ -29,7 +29,7 @@
     "@semantic-release/git": "9.0.1",
     "@zeit/ncc": "0.22.3",
     "eslint": "7.32.0",
-    "eslint-plugin-jest": "24.3.7",
+    "eslint-plugin-jest": "24.7.0",
     "jest": "27.0.6",
     "nock": "13.1.4",
     "node-fetch": "2.6.6",
