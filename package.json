@@ -64,5 +64,6 @@
       "@semantic-release/github",
       "@semantic-release/release-notes-generator"
     ]
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }
