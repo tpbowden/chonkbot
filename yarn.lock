@@ -1196,14 +1196,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/webhooks@npm:7.21.0":
-  version: 7.21.0
-  resolution: "@octokit/webhooks@npm:7.21.0"
+"@octokit/webhooks-methods@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@octokit/webhooks-methods@npm:2.0.0"
+  checksum: 42f87ccb93d05b314a12e99c717523cef290c896719e95cdb9349aee4be453d42c3a4286ee9de67f88946d048b29ae31c2f98875df0c6d5da662e94554acab56
+  languageName: node
+  linkType: hard
+
+"@octokit/webhooks-types@npm:4.17.1":
+  version: 4.17.1
+  resolution: "@octokit/webhooks-types@npm:4.17.1"
+  checksum: fb61751da3748d3d6f4fce348f3edab3e3c860d3dfd84475a972d19dc064893c16e116f26588c4179357bebd9bca75dd674e1eb9a9e2aaeab654f6bc4075e2e6
+  languageName: node
+  linkType: hard
+
+"@octokit/webhooks@npm:^9.8.4":
+  version: 9.20.0
+  resolution: "@octokit/webhooks@npm:9.20.0"
   dependencies:
     "@octokit/request-error": ^2.0.2
+    "@octokit/webhooks-methods": ^2.0.0
+    "@octokit/webhooks-types": 4.17.1
     aggregate-error: ^3.1.0
-    debug: ^4.0.0
-  checksum: ccb6574fc4ffa9f18d732170b9246e6a54b2164f1d434f25aaf6cd047323e13fb17d6cadbfcfafb4f3eba39dc65c66397283acd9fcf6ce482540069b8529319c
+  checksum: 72226f4f1dc27ade56d64a0d5208fcd1a7136d98ab1b6e5c55ee7fb780a04852968f5b376a31fd0b5154deef8b8f0212ad7146b46003320f5f5c4659a613b956
   languageName: node
   linkType: hard
 
@@ -1598,7 +1613,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ioredis@npm:^4.17.8":
+"@types/ioredis@npm:^4.27.1":
   version: 4.28.1
   resolution: "@types/ioredis@npm:4.28.1"
   dependencies:
@@ -2765,7 +2780,7 @@ __metadata:
     node-fetch: 2.6.6
     nodemon: 2.0.15
     prettier: 2.5.0
-    probot: 11.4.1
+    probot: 12.1.2
     semantic-release: 18.0.1
     vercel: 23.1.2
   languageName: unknown
@@ -4907,7 +4922,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ioredis@npm:^4.19.2":
+"ioredis@npm:^4.27.8":
   version: 4.28.2
   resolution: "ioredis@npm:4.28.2"
   dependencies:
@@ -7844,9 +7859,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"probot@npm:11.4.1":
-  version: 11.4.1
-  resolution: "probot@npm:11.4.1"
+"probot@npm:12.1.2":
+  version: 12.1.2
+  resolution: "probot@npm:12.1.2"
   dependencies:
     "@octokit/core": ^3.2.4
     "@octokit/plugin-enterprise-compatibility": ^1.2.8
@@ -7855,12 +7870,12 @@ __metadata:
     "@octokit/plugin-retry": ^3.0.6
     "@octokit/plugin-throttling": ^3.3.4
     "@octokit/types": ^6.1.1
-    "@octokit/webhooks": 7.21.0
+    "@octokit/webhooks": ^9.8.4
     "@probot/get-private-key": ^1.1.0
     "@probot/octokit-plugin-config": ^1.0.0
     "@probot/pino": ^2.2.0
     "@types/express": ^4.17.9
-    "@types/ioredis": ^4.17.8
+    "@types/ioredis": ^4.27.1
     "@types/pino": ^6.3.4
     "@types/pino-http": ^5.0.6
     "@types/update-notifier": ^5.0.0
@@ -7871,7 +7886,7 @@ __metadata:
     eventsource: ^1.0.7
     express: ^4.17.1
     hbs: ^4.1.1
-    ioredis: ^4.19.2
+    ioredis: ^4.27.8
     js-yaml: ^3.14.1
     lru-cache: ^6.0.0
     octokit-auth-probot: ^1.2.2
@@ -7885,7 +7900,7 @@ __metadata:
     uuid: ^8.3.2
   bin:
     probot: bin/probot.js
-  checksum: cdc3af2026c682c45d24e8444d0915460e3927f74c57d630854fbed04784f21845639aa5868d2a805deec1bf330f998a27c054cfb061207522c577c89f2e39ed
+  checksum: ef5da3bb85adc241f74cf3433092e003c567d666bc79b5f9a92fb970da21424ddff9c04d90a6ee81d9eb3361a420f4184db7263b4b9b8aad032da00d668807c0
   languageName: node
   linkType: hard
 
