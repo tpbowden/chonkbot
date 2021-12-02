@@ -1,0 +1,14 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "automerge": true,
+      "automergeStrategy": "squash",
+      "labels": ["automerge"],
+      "matchUpdateTypes": ["patch", "pin", "digest"],
+      "prPriority": 1,
+      "rebaseWhen": "behind-base-branch"
+    }
+  ],
+  "timezone": "Europe/London"
+}
