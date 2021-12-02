@@ -1196,7 +1196,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/webhooks-methods@npm:^2.0.0":
+"@octokit/webhooks-methods@npm:2.0.0, @octokit/webhooks-methods@npm:^2.0.0":
   version: 2.0.0
   resolution: "@octokit/webhooks-methods@npm:2.0.0"
   checksum: 42f87ccb93d05b314a12e99c717523cef290c896719e95cdb9349aee4be453d42c3a4286ee9de67f88946d048b29ae31c2f98875df0c6d5da662e94554acab56
@@ -2771,6 +2771,7 @@ __metadata:
     "@actions/core": 1.6.0
     "@actions/github": 5.0.0
     "@octokit/rest": 18.12.0
+    "@octokit/webhooks-methods": 2.0.0
     "@semantic-release/git": 10.0.1
     "@vercel/ncc": 0.32.0
     eslint: 8.3.0

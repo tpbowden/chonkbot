@@ -1,19 +1,11 @@
 const http = require("http");
 const nock = require("nock");
 const fetch = require("node-fetch");
-const { sign } = require("@octokit/webhooks");
+const { sign } = require("@octokit/webhooks-methods");
 const middleware = require("../src/vercel");
 const payload = require("./fixtures/pullRequestOpened.json");
 
 const server = http.createServer(middleware);
-
-const signature = sign(
-  {
-    secret: process.env.WEBHOOK_SECRET,
-    algorithm: "sha1",
-  },
-  JSON.stringify(payload)
-);
 
 describe("Vercel middleware", () => {
   beforeAll(async () => {
@@ -35,6 +27,13 @@ describe("Vercel middleware", () => {
   });
 
   it("updates the status", async () => {
+    const signature = await sign(
+      {
+        secret: process.env.WEBHOOK_SECRET,
+        algorithm: "sha256",
+      },
+      JSON.stringify(payload)
+    );
     expect.assertions(3);
 
     const port = server.address().port;
@@ -57,7 +56,7 @@ describe("Vercel middleware", () => {
       method: "POST",
       headers: {
         "x-github-event": "pull_request",
-        "x-hub-signature": signature,
+        "x-hub-signature-256": signature,
         "x-github-delivery": "a19c7e40-9bac-11eb-910a-d43d8bd9764e",
       },
       body: JSON.stringify(payload),
