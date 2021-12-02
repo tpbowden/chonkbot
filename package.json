@@ -21,7 +21,7 @@
   "dependencies": {
     "@octokit/rest": "18.12.0",
     "probot": "11.4.1",
-    "vercel": "23.0.1"
+    "vercel": "23.1.2"
   },
   "devDependencies": {
     "@actions/core": "1.6.0",
