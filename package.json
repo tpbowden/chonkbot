@@ -30,7 +30,7 @@
     "@semantic-release/git": "10.0.1",
     "@vercel/ncc": "0.33.1",
     "eslint": "8.6.0",
-    "eslint-plugin-jest": "25.3.0",
+    "eslint-plugin-jest": "25.3.4",
     "jest": "27.4.5",
     "nock": "13.2.1",
     "node-fetch": "2.6.6",
