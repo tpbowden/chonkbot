@@ -32,7 +32,7 @@
     "eslint": "8.6.0",
     "eslint-plugin-jest": "25.3.4",
     "jest": "27.4.7",
-    "nock": "13.2.1",
+    "nock": "13.2.2",
     "node-fetch": "2.6.6",
     "nodemon": "2.0.15",
     "prettier": "2.5.1",
