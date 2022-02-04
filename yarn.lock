@@ -3010,7 +3010,7 @@ __metadata:
     eslint: 8.8.0
     eslint-plugin-jest: 26.0.0
     jest: 27.4.7
-    nock: 13.2.2
+    nock: 13.2.4
     node-fetch: 2.6.7
     nodemon: 2.0.15
     prettier: 2.5.1
@@ -7073,15 +7073,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nock@npm:13.2.2":
-  version: 13.2.2
-  resolution: "nock@npm:13.2.2"
+"nock@npm:13.2.4":
+  version: 13.2.4
+  resolution: "nock@npm:13.2.4"
   dependencies:
     debug: ^4.1.0
     json-stringify-safe: ^5.0.1
     lodash.set: ^4.3.2
     propagate: ^2.0.0
-  checksum: cc1bf6e4bbf2fb0a540aa7d5f82788a6fb2490034083ed89242becc0ff1bfb391bfd3c7a7a9c0f24dec9c085426f66441765756b279a7dd608e4630586f9cb0d
+  checksum: 2750a82ea22eebd8203eb1d7669ae09c3daae1fd573026372bad2515adad48d723a804f647bd45d7a499eb3a9a632560da406bde05bca9df762d3027db9099b5
   languageName: node
   linkType: hard
 
