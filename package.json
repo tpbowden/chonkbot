@@ -31,7 +31,7 @@
     "@vercel/ncc": "0.33.1",
     "eslint": "8.8.0",
     "eslint-plugin-jest": "26.0.0",
-    "jest": "27.4.7",
+    "jest": "27.5.1",
     "nock": "13.2.4",
     "node-fetch": "2.6.7",
     "nodemon": "2.0.15",
