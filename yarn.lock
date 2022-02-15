@@ -2145,14 +2145,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/ncc@npm:0.33.1":
-  version: 0.33.1
-  resolution: "@vercel/ncc@npm:0.33.1"
+"@vercel/ncc@npm:0.33.3":
+  version: 0.33.3
+  resolution: "@vercel/ncc@npm:0.33.3"
   dependencies:
     node-gyp: latest
   bin:
     ncc: dist/ncc/cli.js
-  checksum: 62af9ce257df1ac61acff4facfbb8f3f367a4df02705d608fe43ec5e9fa231e3fcb06a9e494c4e3b3e76441d97cc547aa2c434a5706a02d05f18c32c19dd7929
+  checksum: 0dd73aae0df395524eac2086e23305672d907fb184a6d85249e39a6246ee1c36848b38334d279b5f8b755d3e8ba32a680043034acd3c0f28d7ec38915335509d
   languageName: node
   linkType: hard
 
@@ -3006,7 +3006,7 @@ __metadata:
     "@octokit/rest": 18.12.0
     "@octokit/webhooks-methods": 2.0.0
     "@semantic-release/git": 10.0.1
-    "@vercel/ncc": 0.33.1
+    "@vercel/ncc": 0.33.3
     eslint: 8.9.0
     eslint-plugin-jest: 26.1.0
     jest: 27.5.1
