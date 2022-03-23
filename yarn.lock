@@ -2131,17 +2131,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/build-utils@npm:2.14.0":
-  version: 2.14.0
-  resolution: "@vercel/build-utils@npm:2.14.0"
-  checksum: a2cca427ec080cd2a20c462a6349fff79a1dda55753757e8b5c49ec4431897b34c3d4b83ecb9d7259cb78033e72eb2413d8985b7250369b16685d21517f03994
+"@vercel/build-utils@npm:2.15.0":
+  version: 2.15.0
+  resolution: "@vercel/build-utils@npm:2.15.0"
+  checksum: 2f7ab9ffc882a177a864e4a17779b2813789c70bdb9d16a18a8a11ddf8a6a42a51d6deb4c3ead5a1076d212c602fd3ee2e92946fb9a04055ba1b03e7bddc1162
   languageName: node
   linkType: hard
 
-"@vercel/go@npm:1.3.0":
-  version: 1.3.0
-  resolution: "@vercel/go@npm:1.3.0"
-  checksum: 95ce63e5077bce235f5ed2a2ef807b8967cf9a84a6a57f597ec3f33107be3fb7c8d2c1a0ce90e2b436da2162c3c4d033b2eb1456c9cba1e49aa1fa7725f72336
+"@vercel/go@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@vercel/go@npm:1.3.1"
+  checksum: 8428a0a7cbbe44199ebf6ded4e9cd243ad04fe40f0806ea03a414b567972b8cfa1e3020b4498117b4526c6b3bbe3929b26b108aba9066f98f4fc9a114a9dbde3
   languageName: node
   linkType: hard
 
@@ -2156,28 +2156,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/node@npm:1.13.0":
-  version: 1.13.0
-  resolution: "@vercel/node@npm:1.13.0"
+"@vercel/node-bridge@npm:2.2.0":
+  version: 2.2.0
+  resolution: "@vercel/node-bridge@npm:2.2.0"
+  checksum: 7ba972a005304d96b0c12bde62cf791b700fe726ac2c7cf83088a34912d0e79d130226502e97f71834d1182a43b504437d300075c74e8f6e786c772a79b0af90
+  languageName: node
+  linkType: hard
+
+"@vercel/node@npm:1.14.0":
+  version: 1.14.0
+  resolution: "@vercel/node@npm:1.14.0"
   dependencies:
     "@types/node": "*"
+    "@vercel/node-bridge": 2.2.0
     ts-node: 8.9.1
     typescript: 4.3.4
-  checksum: 54ee2f1b51f658d241b049e5c698d8fb1f70f9740bbbb0e4f83c44c11f5538eabcfdde767f6b1b2311a31c8242b1e1904bf2a2800f258c98faf013bad4425fe0
+  checksum: cde225346712f2401538dcd7a988ae2d44a8c58f23eb3abb69ff2f639904077c747b48ad2b82f6a383d8270fea4453eff22f3b7d13c6a87b2bf96e322b717144
   languageName: node
   linkType: hard
 
-"@vercel/python@npm:2.2.0":
-  version: 2.2.0
-  resolution: "@vercel/python@npm:2.2.0"
-  checksum: a11ca9a5babcc87b9fbc9d99de6597cf01c9c7f365ed2932b836ba99e6cf9b1f952ea7a5771d87f008df93de72613abf50517b0c849a5ad3514a9de0b170083a
+"@vercel/python@npm:2.2.1":
+  version: 2.2.1
+  resolution: "@vercel/python@npm:2.2.1"
+  checksum: 2313aafd63b5c2ed4c49a9f8309849af1233045f32ae940070cf546eb7f600c3f35304693fbbb43b3fdf64dc41806c521de31a14605778b6404e2f1415b21592
   languageName: node
   linkType: hard
 
-"@vercel/ruby@npm:1.3.0":
-  version: 1.3.0
-  resolution: "@vercel/ruby@npm:1.3.0"
-  checksum: 18930821726fd8588e77f9d5bb38a8af658848f79e54d8ca2a50939375bbbd205c893c19e9bd557d3a8ee10df2bd2bbcb64c75b47f6e3310683eca2e049757e1
+"@vercel/ruby@npm:1.3.1":
+  version: 1.3.1
+  resolution: "@vercel/ruby@npm:1.3.1"
+  checksum: b016e855f6f13bf962cb44d343ed22f9abd758246daf96643e34c5df01c1e72da6145f0e5dcc5bcee41eb24760dabd24a05361b6a29a90c757c84241d732ec38
   languageName: node
   linkType: hard
 
@@ -3016,7 +3024,7 @@ __metadata:
     prettier: 2.6.0
     probot: 12.2.2
     semantic-release: 19.0.2
-    vercel: 24.0.0
+    vercel: 24.0.1
   languageName: unknown
   linkType: soft
 
@@ -9910,20 +9918,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vercel@npm:24.0.0":
-  version: 24.0.0
-  resolution: "vercel@npm:24.0.0"
+"vercel@npm:24.0.1":
+  version: 24.0.1
+  resolution: "vercel@npm:24.0.1"
   dependencies:
-    "@vercel/build-utils": 2.14.0
-    "@vercel/go": 1.3.0
-    "@vercel/node": 1.13.0
-    "@vercel/python": 2.2.0
-    "@vercel/ruby": 1.3.0
+    "@vercel/build-utils": 2.15.0
+    "@vercel/go": 1.3.1
+    "@vercel/node": 1.14.0
+    "@vercel/python": 2.2.1
+    "@vercel/ruby": 1.3.1
     update-notifier: 4.1.0
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: e01f49aae982320a3d4c5495c179fcdf5b8c29088f2121f86bf8772f87e4966336a3b072ae4272985e5058925ed084abe38a5b07c99d47c9c57aa071727060f9
+  checksum: bfc72f4ffdac3dd12e1e8638e55fa21fe08dd987d1963275848b9e989fa7f57fdfdd75ca3ff4408af0c64cdb1e315008070c632ce92b0b690c6160d42c304ff4
   languageName: node
   linkType: hard
 
