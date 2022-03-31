@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@actions/core": "1.6.0",
-    "@actions/github": "5.0.0",
+    "@actions/github": "5.0.1",
     "@octokit/rest": "18.12.0",
     "probot": "12.2.2",
     "vercel": "24.0.1"
