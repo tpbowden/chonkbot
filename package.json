@@ -23,7 +23,7 @@
     "@actions/github": "5.0.3",
     "@octokit/rest": "18.12.0",
     "probot": "12.2.2",
-    "vercel": "24.2.3"
+    "vercel": "24.2.4"
   },
   "devDependencies": {
     "@octokit/webhooks-methods": "2.0.0",
