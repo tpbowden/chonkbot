@@ -3369,7 +3369,7 @@ __metadata:
     node-fetch: 2.6.7
     nodemon: 2.0.16
     prettier: 2.6.2
-    probot: 12.2.3
+    probot: 12.2.4
     semantic-release: 19.0.2
     vercel: 24.2.5
   languageName: unknown
@@ -8785,9 +8785,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"probot@npm:12.2.3":
-  version: 12.2.3
-  resolution: "probot@npm:12.2.3"
+"probot@npm:12.2.4":
+  version: 12.2.4
+  resolution: "probot@npm:12.2.4"
   dependencies:
     "@octokit/core": ^3.2.4
     "@octokit/plugin-enterprise-compatibility": ^1.2.8
@@ -8826,7 +8826,7 @@ __metadata:
     uuid: ^8.3.2
   bin:
     probot: bin/probot.js
-  checksum: 144c35c9413baabda8ef755be185587f3e0603458c4cbabcff18ba3a5ed670898b5918ba28e1b6d9088efbf65b8ea6c250d1f4eaec8fce3154081eb9180902e3
+  checksum: 519547be92a4ecf33f878bcb93c93e1da1efcefed1d09697cf559da7438d5387665baa395b3793fe53c31529bf390b7b732f26fec43b4e5bed217135c15eacd0
   languageName: node
   linkType: hard
 
