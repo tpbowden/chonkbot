@@ -3363,7 +3363,7 @@ __metadata:
     "@semantic-release/git": 10.0.1
     "@vercel/ncc": 0.34.0
     eslint: 8.17.0
-    eslint-plugin-jest: 26.4.6
+    eslint-plugin-jest: 26.4.7
     jest: 28.1.0
     nock: 13.2.6
     node-fetch: 2.6.7
@@ -4301,9 +4301,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-jest@npm:26.4.6":
-  version: 26.4.6
-  resolution: "eslint-plugin-jest@npm:26.4.6"
+"eslint-plugin-jest@npm:26.4.7":
+  version: 26.4.7
+  resolution: "eslint-plugin-jest@npm:26.4.7"
   dependencies:
     "@typescript-eslint/utils": ^5.10.0
   peerDependencies:
@@ -4314,7 +4314,7 @@ __metadata:
       optional: true
     jest:
       optional: true
-  checksum: 1d4c35282abecbc3656f9a355c3e63df0b4134fae208ceb9ee75421ed95f6a108753ac86b54d9302f4ae192227c41b45a50034854e75fad3691868eaab8394a2
+  checksum: 81e7f8113d9bc1870833d8c3ed709b3e9229cc4d3d0c825f3988ab4c66b3c312e500bab259f70b7188b23093f863d457e13feb3ebc19bda06640d72e61e87a5b
   languageName: node
   linkType: hard
 
