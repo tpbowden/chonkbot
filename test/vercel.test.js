@@ -2,7 +2,7 @@ const http = require("http");
 const nock = require("nock");
 const fetch = require("node-fetch");
 const { sign } = require("@octokit/webhooks-methods");
-const middleware = require("../src/vercel");
+const middleware = require("../api/github/webhooks");
 const payload = require("./fixtures/pullRequestOpened.json");
 
 const server = http.createServer(middleware);
@@ -52,7 +52,7 @@ describe("Vercel middleware", () => {
       })
       .reply(200);
 
-    const res = await fetch(`http://127.0.0.1:${port}/`, {
+    const res = await fetch(`http://127.0.0.1:${port}/api/github/webhooks`, {
       method: "POST",
       headers: {
         "x-github-event": "pull_request",
