@@ -9,4 +9,7 @@ const appFn = (app) => {
 };
 
 const probot = createProbot();
-module.exports = createNodeMiddleware(appFn, { probot, webhooksPath: '/api/github/webhooks' });
+module.exports = createNodeMiddleware(appFn, {
+  probot,
+  webhooksPath: "/api/github/webhooks",
+});
