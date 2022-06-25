@@ -1,5 +1,5 @@
 const { createNodeMiddleware, createProbot } = require("probot");
-const { createStatus } = require("./core");
+const { createStatus } = require("../../../src/core");
 
 const appFn = (app) => {
   app.on("pull_request", async (context) => {
@@ -9,4 +9,4 @@ const appFn = (app) => {
 };
 
 const probot = createProbot();
-module.exports = createNodeMiddleware(appFn, { probot });
+module.exports = createNodeMiddleware(appFn, { probot, webhooksPath: '/api/github/webhooks' });
