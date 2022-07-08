@@ -34,7 +34,7 @@
     "jest": "28.1.2",
     "nock": "13.2.8",
     "node-fetch": "2.6.7",
-    "nodemon": "2.0.18",
+    "nodemon": "2.0.19",
     "prettier": "2.7.1",
     "semantic-release": "19.0.3"
   },
