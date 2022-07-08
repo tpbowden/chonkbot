@@ -3236,7 +3236,7 @@ __metadata:
     jest: 28.1.2
     nock: 13.2.8
     node-fetch: 2.6.7
-    nodemon: 2.0.18
+    nodemon: 2.0.19
     prettier: 2.7.1
     probot: 12.2.5
     semantic-release: 19.0.3
@@ -7518,9 +7518,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nodemon@npm:2.0.18":
-  version: 2.0.18
-  resolution: "nodemon@npm:2.0.18"
+"nodemon@npm:2.0.19":
+  version: 2.0.19
+  resolution: "nodemon@npm:2.0.19"
   dependencies:
     chokidar: ^3.5.2
     debug: ^3.2.7
@@ -7528,13 +7528,13 @@ __metadata:
     minimatch: ^3.0.4
     pstree.remy: ^1.1.8
     semver: ^5.7.1
+    simple-update-notifier: ^1.0.7
     supports-color: ^5.5.0
     touch: ^3.1.0
     undefsafe: ^2.0.5
-    update-notifier: ^5.1.0
   bin:
     nodemon: bin/nodemon.js
-  checksum: dc742018a3f528129b76d5eecc3a3d4286a5c1666f42ced4aee7b19e28076499e3705fcf274ae0d90ae8fada53c9d0e0a112a1cdb65a22d4349e73ab477241f5
+  checksum: c6cf89435a8945693fac2701285eb1f539b5003d943a1be89a9ffbfc9d0275aa7779f85a9eee509e9f19a988d53ce293266d8b35b91010e36ad9e78683f8eb07
   languageName: node
   linkType: hard
 
@@ -9151,6 +9151,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"semver@npm:~7.0.0":
+  version: 7.0.0
+  resolution: "semver@npm:7.0.0"
+  bin:
+    semver: bin/semver.js
+  checksum: 272c11bf8d083274ef79fe40a81c55c184dff84dd58e3c325299d0927ba48cece1f020793d138382b85f89bab5002a35a5ba59a3a68a7eebbb597eb733838778
+  languageName: node
+  linkType: hard
+
 "send@npm:0.17.1":
   version: 0.17.1
   resolution: "send@npm:0.17.1"
@@ -9236,6 +9245,15 @@ __metadata:
     figures: ^2.0.0
     pkg-conf: ^2.1.0
   checksum: a6a540e054096a1f4cf8b1f21fea62ca3e44a19faa63bd486723b736348609caab1fa59a87f16559de347dde8ae1fdebfc25a8b6723c88ae8239f176ffb0dda5
+  languageName: node
+  linkType: hard
+
+"simple-update-notifier@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "simple-update-notifier@npm:1.0.7"
+  dependencies:
+    semver: ~7.0.0
+  checksum: aaadc1f158ad5101b363d1c7aed1f30fc1cac59a760aa31702633e0e6fe423348f07d0e78185aef0aad29130a7b7f0f188c21c7bc7353f897a0ea3682e051a70
   languageName: node
   linkType: hard
 
@@ -10111,7 +10129,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"update-notifier@npm:5.1.0, update-notifier@npm:^5.1.0":
+"update-notifier@npm:5.1.0":
   version: 5.1.0
   resolution: "update-notifier@npm:5.1.0"
   dependencies:
