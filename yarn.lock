@@ -2606,10 +2606,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/ruby@npm:1.3.26":
-  version: 1.3.26
-  resolution: "@vercel/ruby@npm:1.3.26"
-  checksum: ecb9927e14232710052bd5dacd5bd42d31b4366f167e0be74a11fb6278939a42b108a8d190f79abcb9e4e106237450d7eaf6216187c34c5a3a2b4a95611d6402
+"@vercel/ruby@npm:1.3.27":
+  version: 1.3.27
+  resolution: "@vercel/ruby@npm:1.3.27"
+  checksum: aa6948e1288a20f23a1f6da6c90efef312f93123b0b7aa2e37507e97f341ae44fb3945f316b153f03f999e8d020213b28927fa1d0bdd30734f1df648c2986c34
   languageName: node
   linkType: hard
 
@@ -3427,7 +3427,7 @@ __metadata:
     prettier: 2.7.1
     probot: 12.2.5
     semantic-release: 19.0.3
-    vercel: 28.0.1
+    vercel: 28.0.2
   languageName: unknown
   linkType: soft
 
@@ -10498,9 +10498,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vercel@npm:28.0.1":
-  version: 28.0.1
-  resolution: "vercel@npm:28.0.1"
+"vercel@npm:28.0.2":
+  version: 28.0.2
+  resolution: "vercel@npm:28.0.2"
   dependencies:
     "@vercel/build-utils": 5.3.1
     "@vercel/go": 2.1.1
@@ -10510,13 +10510,13 @@ __metadata:
     "@vercel/python": 3.1.9
     "@vercel/redwood": 1.0.18
     "@vercel/remix": 1.0.19
-    "@vercel/ruby": 1.3.26
+    "@vercel/ruby": 1.3.27
     "@vercel/static-build": 1.0.18
     update-notifier: 5.1.0
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: f09df68e7c30c5cd30a31ab73b0748e77e72123b8cb68a6b9be3a57f02bedc06179e025b4585887073ffbe62e6006a7c5e89d4bae8ef6f3efaac00ce3a9a39cf
+  checksum: cdc58aa755d6dbe8cca729e32a07d2a74798270da2bcbe03980145a488e14e2be343c0b8f12acc19f5663e7812b93cf6bef328f8885bdb88af5bea29ac10ce44
   languageName: node
   linkType: hard
 
