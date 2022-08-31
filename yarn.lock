@@ -1549,6 +1549,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@octokit/openapi-types@npm:^13.6.0":
+  version: 13.6.0
+  resolution: "@octokit/openapi-types@npm:13.6.0"
+  checksum: 2abf858a24888dcede28fe9a3fe3d24fba468d90daf4e22d1238d2419fe69aa8ee8f4aad163a73870038497b3a1b77b9b16172f649fb2cd767dd11fb3d09d44d
+  languageName: node
+  linkType: hard
+
 "@octokit/plugin-enterprise-compatibility@npm:^1.2.8":
   version: 1.3.0
   resolution: "@octokit/plugin-enterprise-compatibility@npm:1.3.0"
@@ -1748,6 +1755,15 @@ __metadata:
   dependencies:
     "@octokit/openapi-types": ^13.0.0
   checksum: 54d714c1e8296da7ff68eec6a72061313a3f4836793fe844a120aa8604336e03423c631d6316fa2ab00c34aae7a4be0ecb6aed192d04f891084e00674d176fcb
+  languageName: node
+  linkType: hard
+
+"@octokit/types@npm:^7.1.1":
+  version: 7.2.0
+  resolution: "@octokit/types@npm:7.2.0"
+  dependencies:
+    "@octokit/openapi-types": ^13.6.0
+  checksum: e647e20ad46cc0899d16a7c621a54857c64f6579becfedc6788b3a0759fff5ca53722309cb51e51cc34312705df6edc084a2dd6ef5850e7668e39f3ed95ba5aa
   languageName: node
   linkType: hard
 
@@ -3425,7 +3441,7 @@ __metadata:
     node-fetch: 2.6.7
     nodemon: 2.0.19
     prettier: 2.7.1
-    probot: 12.2.5
+    probot: 12.2.7
     semantic-release: 19.0.5
     vercel: 28.0.2
   languageName: unknown
@@ -8696,9 +8712,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"probot@npm:12.2.5":
-  version: 12.2.5
-  resolution: "probot@npm:12.2.5"
+"probot@npm:12.2.7":
+  version: 12.2.7
+  resolution: "probot@npm:12.2.7"
   dependencies:
     "@octokit/core": ^3.2.4
     "@octokit/plugin-enterprise-compatibility": ^1.2.8
@@ -8706,7 +8722,7 @@ __metadata:
     "@octokit/plugin-rest-endpoint-methods": ^5.0.1
     "@octokit/plugin-retry": ^3.0.6
     "@octokit/plugin-throttling": ^3.3.4
-    "@octokit/types": ^6.1.1
+    "@octokit/types": ^7.1.1
     "@octokit/webhooks": ^9.8.4
     "@probot/get-private-key": ^1.1.0
     "@probot/octokit-plugin-config": ^1.0.0
@@ -8735,7 +8751,7 @@ __metadata:
     uuid: ^8.3.2
   bin:
     probot: bin/probot.js
-  checksum: d623627c62f213732151b2400d5fea763d80f1c8d93bd70885c6aaad2b9fbbda6a910b410062e36fd23421f90f8738f2d6d094797207a99b1ba69c50881b38a3
+  checksum: 19761d3d23d965c9b551dc2825f2c577708fa34309b727ceb1c8cded8cb41554fde4807a50311602aa39f883f66a9a1a5e29036aae0e13123d8ff9054d016d96
   languageName: node
   linkType: hard
 
