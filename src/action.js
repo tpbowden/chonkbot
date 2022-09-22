@@ -10,7 +10,8 @@ const run = async () => {
       auth: token,
     });
 
-    await createStatus(github.context.payload, app);
+    const status = await createStatus(github.context.payload, app);
+    core.setOutput('chonkLevel', status.description)
   } catch (e) {
     core.setFailed(`Chonkbot failed with error: ${e}`);
   }
