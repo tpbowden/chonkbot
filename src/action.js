@@ -11,10 +11,10 @@ const run = async () => {
     });
 
     const status = await createStatus(github.context.payload, app);
-    core.setOutput('chonkLevel', status.description)
+    core.setOutput('chonkLevel', status.data.description)
   } catch (e) {
     core.setFailed(`Chonkbot failed with error: ${e}`);
   }
 };
 
-run();
+module.exports = run();
