@@ -45,7 +45,7 @@ describe("GitHub action", () => {
     this.outputMock = jest.fn();
     jest.mock("@actions/core", () => ({
       setOutput: this.outputMock,
-      getInput: () => 'test',
+      getInput: () => "test",
     }));
 
     process.env.GITHUB_REPOSITORY = "testuser/testrepo";
@@ -61,7 +61,7 @@ describe("GitHub action", () => {
 
     await run();
 
-    expect(this.outputMock).toHaveBeenCalledWith('chonkLevel', 'a fine boi');
+    expect(this.outputMock).toHaveBeenCalledWith("chonkLevel", "a fine boi");
     expect(scope.isDone()).toBe(true);
   });
 });
