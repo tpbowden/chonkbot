@@ -16712,6 +16712,33 @@ function wrappy (fn, cb) {
 
 /***/ }),
 
+/***/ 3348:
+/***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
+
+const { Octokit } = __nccwpck_require__(5375);
+const core = __nccwpck_require__(2186);
+const github = __nccwpck_require__(5438);
+const { createStatus } = __nccwpck_require__(1192);
+
+const run = async () => {
+  try {
+    const token = core.getInput("token", { required: true });
+    const app = new Octokit({
+      auth: token,
+    });
+
+    const status = await createStatus(github.context.payload, app);
+    core.setOutput("chonkLevel", status.data.description);
+  } catch (e) {
+    core.setFailed(`Chonkbot failed with error: ${e}`);
+  }
+};
+
+module.exports = run();
+
+
+/***/ }),
+
 /***/ 1192:
 /***/ ((module) => {
 
@@ -17007,31 +17034,12 @@ module.exports = JSON.parse('[[[0,44],"disallowed_STD3_valid"],[[45,46],"valid"]
 /******/ 	if (typeof __nccwpck_require__ !== 'undefined') __nccwpck_require__.ab = __dirname + "/";
 /******/ 	
 /************************************************************************/
-var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
-const { Octokit } = __nccwpck_require__(5375);
-const core = __nccwpck_require__(2186);
-const github = __nccwpck_require__(5438);
-const { createStatus } = __nccwpck_require__(1192);
-
-const run = async () => {
-  try {
-    const token = core.getInput("token", { required: true });
-    const app = new Octokit({
-      auth: token,
-    });
-
-    await createStatus(github.context.payload, app);
-  } catch (e) {
-    core.setFailed(`Chonkbot failed with error: ${e}`);
-  }
-};
-
-run();
-
-})();
-
-module.exports = __webpack_exports__;
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	var __webpack_exports__ = __nccwpck_require__(3348);
+/******/ 	module.exports = __webpack_exports__;
+/******/ 	
 /******/ })()
 ;
