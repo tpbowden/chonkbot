@@ -7,6 +7,10 @@ inputs:
     description: GitHub token
     required: true
 
+outputs:
+  chonkLevel:
+    description: Plaintext summary of PR's c (i.e. one dimensional position within the chonk landscape)
+
 runs:
   using: "node12"
   main: "dist/index.js"
