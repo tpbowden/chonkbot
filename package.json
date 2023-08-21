@@ -35,7 +35,7 @@
     "nock": "13.2.9",
     "node-fetch": "2.6.12",
     "nodemon": "2.0.22",
-    "prettier": "2.7.1",
+    "prettier": "2.8.8",
     "semantic-release": "19.0.5"
   },
   "engines": {
