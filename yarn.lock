@@ -1570,13 +1570,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/openapi-types@npm:^13.6.0":
-  version: 13.6.0
-  resolution: "@octokit/openapi-types@npm:13.6.0"
-  checksum: 2abf858a24888dcede28fe9a3fe3d24fba468d90daf4e22d1238d2419fe69aa8ee8f4aad163a73870038497b3a1b77b9b16172f649fb2cd767dd11fb3d09d44d
-  languageName: node
-  linkType: hard
-
 "@octokit/openapi-types@npm:^14.0.0":
   version: 14.0.0
   resolution: "@octokit/openapi-types@npm:14.0.0"
@@ -1765,15 +1758,6 @@ __metadata:
   dependencies:
     "@octokit/openapi-types": ^11.2.0
   checksum: f122b9aee8f6baddd515e34a0913e73b21d4bc82d6ee59d77a8aaf01b4a02c10867dd013003d087a83dc96db23511893669015af6d30c27cece185e21cf1df89
-  languageName: node
-  linkType: hard
-
-"@octokit/types@npm:^7.1.1":
-  version: 7.2.0
-  resolution: "@octokit/types@npm:7.2.0"
-  dependencies:
-    "@octokit/openapi-types": ^13.6.0
-  checksum: e647e20ad46cc0899d16a7c621a54857c64f6579becfedc6788b3a0759fff5ca53722309cb51e51cc34312705df6edc084a2dd6ef5850e7668e39f3ed95ba5aa
   languageName: node
   linkType: hard
 
@@ -3460,7 +3444,7 @@ __metadata:
     node-fetch: 2.6.12
     nodemon: 2.0.22
     prettier: 2.7.1
-    probot: 12.2.8
+    probot: 12.2.9
     semantic-release: 19.0.5
     vercel: 28.0.2
   languageName: unknown
@@ -8734,9 +8718,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"probot@npm:12.2.8":
-  version: 12.2.8
-  resolution: "probot@npm:12.2.8"
+"probot@npm:12.2.9":
+  version: 12.2.9
+  resolution: "probot@npm:12.2.9"
   dependencies:
     "@octokit/core": ^3.2.4
     "@octokit/plugin-enterprise-compatibility": ^1.2.8
@@ -8744,7 +8728,7 @@ __metadata:
     "@octokit/plugin-rest-endpoint-methods": ^5.0.1
     "@octokit/plugin-retry": ^3.0.6
     "@octokit/plugin-throttling": ^3.3.4
-    "@octokit/types": ^7.1.1
+    "@octokit/types": ^8.0.0
     "@octokit/webhooks": ^9.8.4
     "@probot/get-private-key": ^1.1.0
     "@probot/octokit-plugin-config": ^1.0.0
@@ -8773,7 +8757,7 @@ __metadata:
     uuid: ^8.3.2
   bin:
     probot: bin/probot.js
-  checksum: 68aaa96673145603ded1e4b382f9f1a6483baf05863f2e55a0b7f8421f3dfe98c8acbbfe2714ec3cea8256adf9f6e145e3ec74cdcf1be0132be8095e6e6e5a02
+  checksum: ff863af5ef0f6f01a1512b5826f2e73600b756418e511f6e70f602d7df191a3a8554436f3773ed923c0774da0ad08584e59f502c32ea570663b1a9adf5693a79
   languageName: node
   linkType: hard
 
