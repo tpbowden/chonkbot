@@ -21,12 +21,12 @@
   "dependencies": {
     "@actions/core": "1.10.0",
     "@actions/github": "5.1.1",
-    "@octokit/rest": "19.0.5",
+    "@octokit/rest": "19.0.13",
     "probot": "12.2.9",
     "vercel": "28.0.2"
   },
   "devDependencies": {
-    "@octokit/webhooks-methods": "3.0.1",
+    "@octokit/webhooks-methods": "3.0.3",
     "@semantic-release/git": "10.0.1",
     "@vercel/ncc": "0.34.0",
     "eslint": "8.23.1",
