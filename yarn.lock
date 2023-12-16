@@ -1816,22 +1816,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/webhooks-types@npm:4.17.1":
-  version: 4.17.1
-  resolution: "@octokit/webhooks-types@npm:4.17.1"
-  checksum: fb61751da3748d3d6f4fce348f3edab3e3c860d3dfd84475a972d19dc064893c16e116f26588c4179357bebd9bca75dd674e1eb9a9e2aaeab654f6bc4075e2e6
+"@octokit/webhooks-types@npm:5.8.0":
+  version: 5.8.0
+  resolution: "@octokit/webhooks-types@npm:5.8.0"
+  checksum: a5103ef5224e0fab201845fa23333f21415aebae7650f1b6ffe64c11377847139411a1a37fff5931aead13658b94b79ab0abbad24b9c30bfc4d2c9528ceb72d1
   languageName: node
   linkType: hard
 
-"@octokit/webhooks@npm:^9.8.4":
-  version: 9.20.0
-  resolution: "@octokit/webhooks@npm:9.20.0"
+"@octokit/webhooks@npm:^9.26.3":
+  version: 9.26.3
+  resolution: "@octokit/webhooks@npm:9.26.3"
   dependencies:
     "@octokit/request-error": ^2.0.2
     "@octokit/webhooks-methods": ^2.0.0
-    "@octokit/webhooks-types": 4.17.1
+    "@octokit/webhooks-types": 5.8.0
     aggregate-error: ^3.1.0
-  checksum: 72226f4f1dc27ade56d64a0d5208fcd1a7136d98ab1b6e5c55ee7fb780a04852968f5b376a31fd0b5154deef8b8f0212ad7146b46003320f5f5c4659a613b956
+  checksum: f12611db4327e0056af146d32ae6fc3030ed2410cc7aee44aeeb7b3e6cb8abc714a0fd0a98307d902938dbf76768314143be1425c904a2441e8fef4ea4c729b6
   languageName: node
   linkType: hard
 
@@ -3476,7 +3476,7 @@ __metadata:
     node-fetch: 2.6.13
     nodemon: 2.0.22
     prettier: 2.7.1
-    probot: 12.2.9
+    probot: 12.3.3
     semantic-release: 19.0.5
     vercel: 28.0.2
   languageName: unknown
@@ -8750,9 +8750,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"probot@npm:12.2.9":
-  version: 12.2.9
-  resolution: "probot@npm:12.2.9"
+"probot@npm:12.3.3":
+  version: 12.3.3
+  resolution: "probot@npm:12.3.3"
   dependencies:
     "@octokit/core": ^3.2.4
     "@octokit/plugin-enterprise-compatibility": ^1.2.8
@@ -8761,7 +8761,7 @@ __metadata:
     "@octokit/plugin-retry": ^3.0.6
     "@octokit/plugin-throttling": ^3.3.4
     "@octokit/types": ^8.0.0
-    "@octokit/webhooks": ^9.8.4
+    "@octokit/webhooks": ^9.26.3
     "@probot/get-private-key": ^1.1.0
     "@probot/octokit-plugin-config": ^1.0.0
     "@probot/pino": ^2.2.0
@@ -8789,7 +8789,7 @@ __metadata:
     uuid: ^8.3.2
   bin:
     probot: bin/probot.js
-  checksum: ff863af5ef0f6f01a1512b5826f2e73600b756418e511f6e70f602d7df191a3a8554436f3773ed923c0774da0ad08584e59f502c32ea570663b1a9adf5693a79
+  checksum: 1e63f9b4bbb8e2e7531431d32da96e2643779219c5c0bee9103668b2274a9fc27604d250b1e7f1fd4bf8dcab801a9dbd6138edd384ce77bf0dec224ad21bb795
   languageName: node
   linkType: hard
 
