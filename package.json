@@ -66,5 +66,5 @@
       "@semantic-release/release-notes-generator"
     ]
   },
-  "packageManager": "yarn@3.2.4"
+  "packageManager": "yarn@3.8.6"
 }
